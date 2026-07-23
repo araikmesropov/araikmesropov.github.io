@@ -298,6 +298,7 @@ html,body{overflow-x:hidden}
   .next-case a{padding:24px 24px}
 }
 @media(max-width:600px){
+  nav.main a.hide-m{display:none}
   header.site .wrap{height:56px}
   .logo{font-size:15px}
   nav.main{gap:15px;font-size:13px}
@@ -326,8 +327,8 @@ html,body{overflow-x:hidden}
   .pulse-split h3{font-size:24px!important}
   footer.site .wrap{flex-direction:column;gap:6px;text-align:left}
 }
-@media(max-width:390px){
+@media(max-width:440px){
   .logo{font-size:14px}
-  nav.main{gap:12px}
+  nav.main{gap:13px}
   nav.main a.hide-s{display:none}
 }
