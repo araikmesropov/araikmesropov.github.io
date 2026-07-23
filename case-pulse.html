@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pulse — SaaS событийной площадки · Араик Месропов</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script>const _t=localStorage.getItem("theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");document.documentElement.dataset.theme=_t;function tgT(){const d=document.documentElement;d.dataset.theme=d.dataset.theme==="dark"?"light":"dark";localStorage.setItem("theme",d.dataset.theme)}</script>
+<style>
+.pui{background:#F1F2F4;border-radius:var(--r);padding:clamp(14px,2.5vw,28px)}
+.app{background:#FCFCFD;border:1px solid #E4E4E7;border-radius:14px;overflow:hidden;display:grid;grid-template-columns:200px 1fr;font-size:12.5px;color:#1A1917;box-shadow:0 20px 60px rgba(20,18,16,.1)}
+.sb{background:#09090B;color:#A7ADB8;padding:16px 0;display:flex;flex-direction:column;gap:2px}
+.sb .lg{color:#fff;font-weight:700;font-size:14px;padding:4px 18px 14px;letter-spacing:-.02em}
+.sb .lg i{color:#3B82F6;font-style:normal}
+.sb a{padding:8px 18px;font-size:12px;color:#A1A1AA}
+.sb a.on{background:#1C1C20;color:#fff;border-left:3px solid #3B82F6;padding-left:15px}
+.tp{display:flex;align-items:center;justify-content:space-between;padding:12px 18px;border-bottom:1px solid #E9EAEC;background:#fff}
+.tp b{font-size:13.5px}
+.cal{display:grid;grid-template-columns:repeat(7,1fr);gap:1px;background:#E9EAEC;padding:1px}
+.cal .dh{background:#F5F6F7;padding:7px 10px;font-size:10px;font-weight:600;color:#71717A;text-transform:uppercase;letter-spacing:.05em}
+.cal .dc{background:#fff;min-height:96px;padding:8px;display:flex;flex-direction:column;gap:6px}
+.ev{border-radius:6px;padding:6px 8px;font-size:10.5px;line-height:1.35;border-left:3px solid #09090B;background:#EEF0F2}
+.ev b{display:block;font-size:11px}
+.ev span{color:#71717A}
+.ev.gala{border-color:#2563EB;background:#DBEAFE}
+.ev.mont{border:1px dashed #CDD1D6;border-left:1px dashed #CDD1D6;background:#F7F8F9;color:#52525B}
+.ev.conf{border-color:#C24A2E;background:#F9E2DC}
+.ev.conf span{color:#96301C}
+.pcard{background:#fff;border:1px solid #E9EAEC;border-radius:10px;padding:14px}
+.pcard h5{font-size:12px;margin-bottom:10px}
+.tgl{display:flex;justify-content:space-between;align-items:center;padding:7px 0;border-bottom:1px solid #F0F1F3;font-size:11.5px}
+.tgl:last-child{border:0}
+.sw{width:30px;height:18px;border-radius:99px;background:#E4E4E7;position:relative}
+.sw.on{background:#09090B}
+.sw i{position:absolute;top:2px;left:2px;width:14px;height:14px;border-radius:50%;background:#fff;display:block}
+.sw.on i{left:14px}
+.ck{display:flex;gap:8px;align-items:flex-start;padding:6px 0;font-size:11.5px}
+.ck i{width:14px;height:14px;border-radius:4px;border:1.5px solid #CDD1D6;display:block;flex:none;margin-top:1px}
+.ck.done i{background:#09090B;border-color:#09090B}
+.ck.done span{text-decoration:line-through;color:#71717A}
+.hbar{display:flex;align-items:flex-end;gap:6px;height:74px}
+.hbar i{flex:1;background:#DBEAFE;border-radius:4px 4px 0 0;display:block}
+.hbar i.hi{background:#2563EB}
+.phone{width:230px;background:#09090B;border-radius:28px;padding:8px;box-shadow:0 24px 60px rgba(20,18,16,.28)}
+.pscr{background:#FCFCFD;border-radius:21px;overflow:hidden;font-size:11px;color:#1A1917}
+.tok{height:52px;border-radius:10px;display:flex;align-items:flex-end;padding:8px;font-family:var(--mono);font-size:9.5px}
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="logo" href="index.html">Араик Месропов<b>.</b></a>
+    <nav class="main" aria-label="Основная навигация">
+      <a href="index.html#work">Работы</a>
+      <a href="index.html#contact">Контакт</a>
+      <a class="lang" href="en/case-pulse.html"><b>RU</b> · EN</a>
+      <button class="tbtn" onclick="tgT()" aria-label="Переключить тему"></button>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="case-hero wrap">
+  <div class="row"><span class="k">SaaS · дизайн-система</span><span class="badge">Концептуальный проект</span></div>
+  <h1 class="d" style="margin:16px 0 10px">Pulse<span class="dot">.</span></h1>
+  <p class="lead" style="max-width:640px">Операционная система событийной площадки: расписание, перестройки зала, бригада и загрузка — на одном экране.</p>
+  <div class="meta-chips">
+    <span class="chip">Роль: <b>соло — продуктовая логика, UX, UI, дизайн-система</b></span>
+    <span class="chip">Платформа: <b>web · desktop-first + мобильный компаньон</b></span>
+    <span class="chip"><b>Концепт</b> — без реального заказчика</span>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <div class="pui reveal">
+    <div class="app">
+      <nav class="sb" aria-hidden="true">
+        <span class="lg">pulse<i>.</i></span>
+        <a class="on">Calendar</a><a>Events</a><a>Hall configs</a><a>Crew</a><a>Analytics</a><a>Settings</a>
+      </nav>
+      <div>
+        <div class="tp"><b>August · week 32</b><span><span class="uibadge uib-err">1 conflict</span>&nbsp;<span class="uibtn">+ New event</span></span></div>
+        <div class="cal">
+          <div class="dh">Mon 3</div><div class="dh">Tue 4</div><div class="dh">Wed 5</div><div class="dh">Thu 6</div><div class="dh">Fri 7</div><div class="dh">Sat 8</div><div class="dh">Sun 9</div>
+          <div class="dc"><div class="ev gala"><b>Gala dinner</b><span>18:00 · 160 guests</span></div></div>
+          <div class="dc"><div class="ev mont">Changeover → Gallery · 6 h<br><span>crew of 6 · rig plan B</span></div></div>
+          <div class="dc"><div class="ev"><b>Vernissage</b><span>12:00 · 400 guests</span></div></div>
+          <div class="dc"><div class="ev"><b>Vernissage · day 2</b><span>12:00</span></div></div>
+          <div class="dc"><div class="ev mont">Changeover → Concert · 8 h</div></div>
+          <div class="dc"><div class="ev gala"><b>Symphony night</b><span>19:00 · 320 seats</span></div></div>
+          <div class="dc"><div class="ev conf"><b>Fashion show</b><span>⚠ montage window 2 h of 6</span></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p class="figcap">Экран 01 · Календарь: события и окна перестройки в одной сетке — конфликт монтажа подсвечивается при планировании, а не в день события</p>
+
+  <div class="statband" style="margin-top:28px">
+    <div class="tile pad stat reveal"><div class="n">5</div><div class="l">экранов в скоупе концепта</div></div>
+    <div class="tile pad stat reveal"><div class="n">6</div><div class="l">форматов событий из практики Камертона</div></div>
+    <div class="tile pad stat reveal"><div class="n">7</div><div class="l">элементов конфигурации зала</div></div>
+    <div class="tile copper pad stat reveal"><div class="n">3–8 ч</div><div class="l">окно перестройки — ядро планирования</div></div>
+  </div>
+
+  <div class="tile ink pad reveal" style="margin-top:36px">
+    <span class="k">Откуда концепт</span>
+    <p class="big" style="font-size:clamp(19px,2.2vw,26px);margin:12px 0;line-height:1.3;max-width:840px">Pulse вырос из кейса «Камертон»: площадка-трансформер живёт перестройками, а управлять ими в таблицах и чатах рискованно<span style="color:var(--copper-light)">.</span></p>
+    <div class="row" style="margin-top:6px">
+      <span class="chip" style="border-color:#3F3F46;color:#A7ADB8">риск: конфликты расписания</span>
+      <span class="chip" style="border-color:#3F3F46;color:#A7ADB8">риск: потеря статусов монтажа</span>
+      <span class="chip" style="border-color:#3F3F46;color:#A7ADB8">риск: несогласованность бригады</span>
+    </div>
+    <p class="cap" style="margin-top:14px;opacity:.7">Риски — проектные допущения; интервью с площадками не проводились. Параметры зала — из конкурсного проекта «Камертон» (<a href="case-kamerton.html" style="color:var(--copper-light)">кейс 01</a>).</p>
+  </div>
+
+  <div class="bento" style="grid-template-columns:1.35fr 1fr;margin-top:36px" id="pl-passport">
+    <div class="pui reveal" style="padding:clamp(14px,2vw,24px)">
+      <div class="app" style="grid-template-columns:1fr">
+        <div>
+          <div class="tp"><b>Symphony night — Sat, Aug 8</b><span class="uibadge uib-ok">confirmed</span></div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:14px">
+            <div class="pcard">
+              <h5>Hall configuration · Concert</h5>
+              <div class="tgl"><span>Stage 12 × 8 + shell</span><span class="sw on"><i></i></span></div>
+              <div class="tgl"><span>Telescopic tribunes · 320</span><span class="sw on"><i></i></span></div>
+              <div class="tgl"><span>Acoustic banners · RT 1.5</span><span class="sw on"><i></i></span></div>
+              <div class="tgl"><span>Mobile walls</span><span class="sw"><i></i></span></div>
+              <div class="tgl"><span>Curtain ring</span><span class="sw"><i></i></span></div>
+            </div>
+            <div class="pcard">
+              <h5>Changeover checklist · crew of 6</h5>
+              <div class="ck done"><i></i><span>Clear gallery walls → pocket B</span></div>
+              <div class="ck done"><i></i><span>Rails: mount stage modules</span></div>
+              <div class="ck"><i></i><span>Tribunes: unfold + lock</span></div>
+              <div class="ck"><i></i><span>Light preset 04 · Concert</span></div>
+              <div style="margin-top:10px"><span class="uibadge uib-warn">in progress · 5 h left</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tile pad reveal" style="display:flex;flex-direction:column;justify-content:center;gap:14px">
+      <span class="k">Экран 02 · Паспорт события</span>
+      <p class="big" style="font-size:clamp(18px,2vw,23px);line-height:1.3">Конфигурация зала — те самые 7 элементов — превращается в чек-лист бригады<span style="color:var(--copper)">.</span></p>
+      <p class="cap">Гипотеза: паспорт сокращает подготовку брифа перестройки. Проверка — сценарный тест против «ручного» процесса.</p>
+    </div>
+  </div>
+
+  <div class="bento" style="grid-template-columns:1fr 1.35fr;margin-top:36px" id="pl-dash">
+    <div class="tile pad reveal" style="display:flex;flex-direction:column;justify-content:center;gap:14px">
+      <span class="k">Экран 03 · Дашборд руководителя</span>
+      <p class="big" style="font-size:clamp(18px,2vw,23px);line-height:1.3">Загрузка, выручка по форматам и статус ближайшей перестройки — без раскопок в таблицах<span style="color:var(--copper)">.</span></p>
+      <p class="cap">Числа на макете — демонстрационные данные концепта.</p>
+    </div>
+    <div class="pui reveal" style="padding:clamp(14px,2vw,24px)">
+      <div class="app" style="grid-template-columns:1fr">
+        <div>
+          <div class="tp"><b>Overview · August</b><span style="display:inline-flex;align-items:center;gap:7px"><span class="livedot"></span><span class="uibadge uib-mut">demo data</span></span></div>
+          <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;padding:14px">
+            <div class="pcard"><h5>Occupancy</h5><div class="hbar"><i style="--h:40%;--d:.1s"></i><i style="--h:62%;--d:.2s"></i><i style="--h:48%;--d:.3s"></i><i class="hi" style="--h:86%;--d:.4s"></i><i style="--h:70%;--d:.5s"></i></div><p style="margin-top:8px;font-size:10.5px;color:#71717A">weeks 29–33</p></div>
+            <div class="pcard"><h5>Revenue by format</h5>
+              <div style="display:flex;flex-direction:column;gap:7px;font-size:10.5px">
+                <span>Concerts<span style="float:right;font-weight:600">44%</span></span><div class="bar" style="height:6px"><i style="width:44%"></i></div>
+                <span>Fashion<span style="float:right;font-weight:600">27%</span></span><div class="bar" style="height:6px"><i style="width:27%"></i></div>
+                <span>Galleries<span style="float:right;font-weight:600">18%</span></span><div class="bar" style="height:6px"><i style="width:18%"></i></div>
+              </div>
+            </div>
+            <div class="pcard"><h5>Next changeover</h5>
+              <p style="font-size:20px;font-weight:700;letter-spacing:-.02em">5 h 20 m</p>
+              <p style="font-size:10.5px;color:#71717A;margin:4px 0 10px">→ Concert · crew of 6</p>
+              <span class="uibadge uib-warn">4 of 9 tasks done</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bento" style="grid-template-columns:1fr 1.6fr;margin-top:36px" id="pl-mobile">
+    <div class="tile beige reveal" style="display:flex;align-items:center;justify-content:center;padding:34px">
+      <div class="phone">
+        <div class="pscr">
+          <div style="background:#09090B;color:#fff;padding:12px 14px"><b style="font-size:12px">pulse<span style="color:#3B82F6">.</span> crew</b><p style="color:#A1A1AA;font-size:9.5px;margin-top:2px">Changeover → Concert · 5 h left</p></div>
+          <div style="padding:12px 14px">
+            <div class="ck done"><i></i><span>Clear gallery walls → pocket B</span></div>
+            <div class="ck done"><i></i><span>Rails: mount stage modules</span></div>
+            <div class="ck done"><i></i><span>Stage shell assembly</span></div>
+            <div class="ck done"><i></i><span>Tribunes: unfold + lock 320</span></div>
+            <div class="ck"><i></i><span>Acoustic banners RT 1.5</span></div>
+            <div class="ck"><i></i><span>Light preset 04 · Concert</span></div>
+            <div style="margin-top:10px;display:flex;gap:6px"><span class="uibadge uib-ok">4 done</span><span class="uibadge uib-warn">2 left</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tile pad reveal" style="display:flex;flex-direction:column;justify-content:center;gap:14px">
+      <span class="k">Экран 04–05 · Мобильный компаньон бригады</span>
+      <p class="big" style="font-size:clamp(18px,2.2vw,24px);line-height:1.3">Статусы задач отмечаются с телефона прямо в зале — руководитель видит прогресс без звонков<span style="color:var(--copper)">.</span></p>
+      <p class="cap">Гипотеза: мобильный чек-лист снижает потерю статусов. Проверка — юзабилити-тест мобильного флоу.</p>
+    </div>
+  </div>
+
+  <div class="tile pad reveal" style="margin-top:36px">
+    <span class="k">Дизайн-система · фрагмент</span>
+    <div class="bento" style="grid-template-columns:repeat(4,1fr);margin-top:16px" id="pl-ds">
+      <div>
+        <p class="cap" style="margin-bottom:8px">Цвет</p>
+        <div style="display:grid;gap:6px">
+          <div class="tok" style="background:#09090B;color:#A1A1AA">ink / #09090B</div>
+          <div class="tok" style="background:#2563EB;color:#BFDBFE">accent / #2563EB</div>
+          <div class="tok" style="background:#F1F2F4;color:#71717A;border:1px solid #E4E4E7">canvas / #F1F2F4</div>
+        </div>
+      </div>
+      <div>
+        <p class="cap" style="margin-bottom:8px">Типографика</p>
+        <p style="font-size:22px;font-weight:700;letter-spacing:-.02em">Display 22</p>
+        <p style="font-size:14px;font-weight:600">Heading 14</p>
+        <p style="font-size:12.5px">Body 12.5</p>
+        <p style="font-family:var(--mono);font-size:11px;color:var(--muted)">mono meta 11</p>
+      </div>
+      <div>
+        <p class="cap" style="margin-bottom:8px">Статусы</p>
+        <div style="display:flex;flex-direction:column;gap:8px;align-items:flex-start">
+          <span class="uibadge uib-ok">confirmed</span>
+          <span class="uibadge uib-warn">in progress</span>
+          <span class="uibadge uib-err">conflict</span>
+          <span class="uibadge uib-mut">draft</span>
+        </div>
+      </div>
+      <div>
+        <p class="cap" style="margin-bottom:8px">Контролы</p>
+        <div style="display:flex;flex-direction:column;gap:10px;align-items:flex-start">
+          <span class="uibtn">+ New event</span>
+          <span style="display:flex;align-items:center;gap:8px;font-size:11.5px">Stage shell <span class="sw on"><i></i></span></span>
+          <div class="ev gala" style="min-width:150px"><b>Event cell</b><span>18:00 · 160</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tile ink pad reveal" style="margin-top:36px">
+    <span class="k">Статус и честность</span>
+    <p class="big" style="font-size:clamp(19px,2.2vw,26px);margin:12px 0;line-height:1.3;max-width:840px">Концептуальный проект: без заказчика, метрик и выдуманных интервью. Вместо них — гипотезы и способы их проверки<span style="color:var(--copper-light)">.</span></p>
+    <p class="cap" style="opacity:.75">Скоуп производства: 5 экранов + лист дизайн-системы. Следующий шаг — интерактивный прототип сценария «запланируй событие с недостаточным окном монтажа».</p>
+  </div>
+</div>
+
+<div class="wrap next-case">
+  <a href="case-kamerton.html"><span><span class="nx">К первому кейсу</span><br><span class="nm">Камертон</span></span><span style="font-size:28px">→</span></a>
+</div>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <span>© 2026 Араик Месропов</span>
+    <span>Спроектировано и свёрстано автором</span>
+  </div>
+</footer>
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.08});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+const rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
+if(!rm){const io2=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;io2.unobserve(e.target);const n=e.target,t=parseInt(n.dataset.cnt),s=performance.now(),d=750;const step=x=>{const p=Math.min(1,(x-s)/d);n.textContent=Math.round(t*(.15+.85*p*(2-p)));if(p<1)requestAnimationFrame(step)};requestAnimationFrame(step)}),{threshold:.6});
+document.querySelectorAll('.stat .n').forEach(n=>{const v=n.textContent.trim();if(/^\d+$/.test(v)&&+v>1){n.dataset.cnt=v;io2.observe(n)}})}
+</script>
+<style>@media(max-width:960px){#pl-passport,#pl-dash,#pl-mobile{grid-template-columns:1fr!important}#pl-ds{grid-template-columns:1fr 1fr!important}.app{grid-template-columns:1fr!important}.sb{flex-direction:row;overflow-x:auto;padding:10px 8px}.sb .lg{padding:4px 12px}.sb a{white-space:nowrap;padding:6px 12px}.sb a.on{border-left:0;border-bottom:2px solid #3B82F6}.cal{grid-template-columns:repeat(2,1fr)}.cal .dh:nth-child(n+3){display:none}.cal .dc:nth-child(n+10){display:none}}</style>
+</body>
+</html>

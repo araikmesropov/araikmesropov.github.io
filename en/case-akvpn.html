@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AKVPN — a VPN service managed via Telegram · Araik Mesropov</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+<script>const _t=localStorage.getItem("theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");document.documentElement.dataset.theme=_t;function tgT(){const d=document.documentElement;d.dataset.theme=d.dataset.theme==="dark"?"light":"dark";localStorage.setItem("theme",d.dataset.theme)}</script>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="logo" href="index.html">Araik Mesropov<b>.</b></a>
+    <nav class="main" aria-label="Main navigation">
+      <a href="index.html#work">Work</a>
+      <a href="index.html#contact">Contact</a>
+      <a class="lang" href="../case-akvpn.html">RU · <b>EN</b></a>
+      <button class="tbtn" onclick="tgT()" aria-label="Toggle theme"></button>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="case-hero wrap">
+  <div class="row"><span class="k">Product logic</span><span class="badge">Concept · in development</span></div>
+  <h1 class="d" style="margin:16px 0 10px">AKVPN<span class="dot">.</span></h1>
+  <p class="lead" style="max-width:640px">Purchase and subscription — in Telegram. Connection — one tap via a VPN client.</p>
+  <div class="meta-chips">
+    <span class="chip">Role: <b>user flow — scenario logic and drawing</b></span>
+    <span class="chip">Timeline: <b>~2 months, mid-way</b></span>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="tile ink reveal" style="padding:36px 30px">
+    <svg viewBox="0 0 920 392" role="img" aria-label="AKVPN user flow: from Telegram start to an active connection" style="width:100%;display:block">
+      <g font-family="ui-monospace,Menlo,monospace" font-size="15">
+        <text x="20" y="30" fill="#60A5FA" font-size="12" letter-spacing="3">TELEGRAM BOT + MINIAPP</text>
+        <rect x="20" y="50" width="160" height="54" rx="10" fill="none" stroke="#3F3F46" stroke-width="1.5"/>
+        <text x="100" y="82" text-anchor="middle" fill="#E4E7EB">/start</text>
+        <rect x="230" y="50" width="160" height="54" rx="10" fill="none" stroke="#3F3F46" stroke-width="1.5"/>
+        <text x="310" y="75" text-anchor="middle" fill="#E4E7EB">menu</text>
+        <text x="310" y="93" text-anchor="middle" fill="#A1A1AA" font-size="11">7 scenarios</text>
+        <rect x="440" y="50" width="160" height="54" rx="10" fill="none" stroke="#3F3F46" stroke-width="1.5"/>
+        <text x="520" y="75" text-anchor="middle" fill="#E4E7EB">plan</text>
+        <text x="520" y="93" text-anchor="middle" fill="#A1A1AA" font-size="11">balance · term · devices</text>
+        <rect x="650" y="50" width="160" height="54" rx="10" fill="none" stroke="#3F3F46" stroke-width="1.5"/>
+        <text x="730" y="75" text-anchor="middle" fill="#E4E7EB">payment</text>
+        <text x="730" y="93" text-anchor="middle" fill="#A1A1AA" font-size="11">card · crypto</text>
+        <line class="c" x1="180" y1="77" x2="228" y2="77" stroke="#3B82F6" stroke-width="1.5"/>
+        <line class="c" x1="390" y1="77" x2="438" y2="77" stroke="#3B82F6" stroke-width="1.5"/>
+        <line class="c" x1="600" y1="77" x2="648" y2="77" stroke="#3B82F6" stroke-width="1.5"/>
+        <path class="c" d="M730 104 L730 160 L460 160 L460 190" fill="none" stroke="#3B82F6" stroke-width="1.5"/>
+        <rect x="370" y="192" width="180" height="54" rx="10" fill="#3B82F6"/>
+        <rect class="ring" x="370" y="192" width="180" height="54" rx="10" fill="none" stroke="#3B82F6"/>
+        <text x="460" y="224" text-anchor="middle" fill="#FFFFFF" font-weight="600">key issued</text>
+        <line class="dashmove" x1="460" y1="246" x2="460" y2="288" stroke="#3B82F6" stroke-width="1.5" stroke-dasharray="4 4"/>
+        <text x="478" y="272" fill="#3B82F6" font-size="12">target: &lt; 5 s from “connect”</text>
+        <rect x="330" y="290" width="260" height="54" rx="10" fill="none" stroke="#3B82F6" stroke-width="1.5"/>
+        <text x="460" y="315" text-anchor="middle" fill="#3B82F6">VPN client · WireGuard</text>
+        <text x="460" y="333" text-anchor="middle" fill="#A1A1AA" font-size="11">Happ and similar</text>
+        <text x="20" y="384" fill="#71717A" font-size="12">referrals live in the data-model core</text>
+      </g>
+    </svg>
+  </div>
+  <p class="figcap">Key fragment of the user flow, redrawn from project documentation · the target figure is a design goal, not a measured metric</p>
+
+  <div class="statband" style="margin-top:28px">
+    <div class="tile pad stat reveal"><div class="n">12</div><div class="l">pages of documentation</div></div>
+    <div class="tile pad stat reveal"><div class="n">7</div><div class="l">user scenarios</div></div>
+    <div class="tile pad stat reveal"><div class="n">4</div><div class="l">data-model entities</div></div>
+    <div class="tile copper pad stat reveal"><div class="n">&lt;5 s</div><div class="l">target: from “connect” to connection</div></div>
+  </div>
+
+  <div class="bento" style="grid-template-columns:1fr 1fr;margin-top:36px" id="ak-problem">
+    <div class="tile pad reveal">
+      <span class="k">The usual path</span>
+      <div style="display:flex;flex-direction:column;gap:8px;margin-top:14px">
+        <span class="chip" style="opacity:.55">find a service</span>
+        <span class="chip" style="opacity:.65">sign up</span>
+        <span class="chip" style="opacity:.75">pay on an unfamiliar site</span>
+        <span class="chip" style="opacity:.85">download a client</span>
+        <span class="chip">configure manually</span>
+      </div>
+      <p class="cap" style="margin-top:12px">Every step loses users.</p>
+    </div>
+    <div class="tile ink pad reveal" style="display:flex;flex-direction:column;justify-content:center;gap:12px">
+      <span class="k">The AKVPN path</span>
+      <div class="flow stagger">
+        <span class="fc" style="background:transparent;border-color:#3F3F46;color:#E4E7EB">Telegram</span>
+        <span class="ar">→</span>
+        <span class="fc" style="background:#3B82F6;border-color:#3B82F6;color:#FFFFFF;font-weight:600">ready profile</span>
+        <span class="ar">→</span>
+        <span class="fc acc" style="background:transparent">client</span>
+      </div>
+      <p class="cap">Hypothesis: if purchase lives where the user already is, and setup is importing a ready profile, the entry barrier drops. Post-launch validation: /start → active-connection conversion.</p>
+    </div>
+  </div>
+
+  <div class="tile pad reveal" style="margin-top:36px">
+    <span class="k">Architecture · 3 layers</span>
+    <div class="bento" style="grid-template-columns:repeat(3,1fr);margin-top:16px" id="ak-arch">
+      <div style="border:1.5px solid var(--line);border-radius:14px;padding:18px">
+        <span class="badge">interface</span>
+        <p class="cap" style="margin-top:10px;font-size:13.5px">Telegram Bot · MiniApp · web</p>
+      </div>
+      <div style="border:1.5px solid var(--ink);border-radius:14px;padding:18px">
+        <span class="badge live">backend</span>
+        <p class="cap" style="margin-top:10px;font-size:13.5px">Bot API · Auth · Billing · VPN Manager (WireGuard/VLESS/Outline) · Key Gen · Payments</p>
+      </div>
+      <div style="border:1.5px solid var(--copper);border-radius:14px;padding:18px">
+        <span class="badge copper">VPN layer</span>
+        <p class="cap" style="margin-top:10px;font-size:13.5px">VPS servers · Marzban panel</p>
+      </div>
+    </div>
+    <p class="cap" style="margin-top:14px">The diagrams reflect design intent; technical validation belongs to the development stage.</p>
+  </div>
+
+  <div class="bento" style="grid-template-columns:repeat(4,1fr);margin-top:36px" id="ak-db">
+    <div class="tile beige pad reveal"><span class="k">USER</span><p class="cap" style="margin-top:10px;font-family:var(--mono);font-size:12px">telegram id<br>balance<br>referral_id</p></div>
+    <div class="tile beige pad reveal"><span class="k">SUBSCRIPTION</span><p class="cap" style="margin-top:10px;font-family:var(--mono);font-size:12px">plan · expire<br>device_limit<br>server_region</p></div>
+    <div class="tile beige pad reveal"><span class="k">DEVICE</span><p class="cap" style="margin-top:10px;font-family:var(--mono);font-size:12px">device_id<br>linked to subscription</p></div>
+    <div class="tile beige pad reveal"><span class="k">PAYMENT</span><p class="cap" style="margin-top:10px;font-family:var(--mono);font-size:12px">method · amount<br>status · tx_hash</p></div>
+  </div>
+  <p class="figcap">Growth is built into the schema: referrals in USER, crypto in PAYMENT, plans scale without a DB rebuild</p>
+
+  <div class="tile ink pad reveal" style="margin-top:36px">
+    <span class="k">Why this case has almost no pictures</span>
+    <p class="big" style="font-size:clamp(19px,2.2vw,26px);margin:12px 0;line-height:1.3;max-width:800px">Product design starts with logic, scenarios and the data model — not with UI<span style="color:var(--copper-light)">.</span></p>
+    <p class="cap" style="opacity:.75">The MiniApp UI is the next stage; the case will grow with the interface and the launch.</p>
+  </div>
+</div>
+
+<div class="wrap next-case">
+  <a href="case-bviweb.html"><span><span class="nx">Next case</span><br><span class="nm">Ticket to Art</span></span><span style="font-size:28px">→</span></a>
+</div>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <span>© 2026 Araik Mesropov</span>
+    <span>Designed and built by the author</span>
+  </div>
+</footer>
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.1});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+const rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
+if(!rm){const io2=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;io2.unobserve(e.target);const n=e.target,t=parseInt(n.dataset.cnt),s=performance.now(),d=750;const step=x=>{const p=Math.min(1,(x-s)/d);n.textContent=Math.round(t*(.15+.85*p*(2-p)));if(p<1)requestAnimationFrame(step)};requestAnimationFrame(step)}),{threshold:.6});
+document.querySelectorAll('.stat .n').forEach(n=>{const v=n.textContent.trim();if(/^\d+$/.test(v)&&+v>1){n.dataset.cnt=v;io2.observe(n)}})}
+</script>
+<style>@media(max-width:820px){#ak-problem,#ak-arch,#ak-db{grid-template-columns:1fr!important}}@media(max-width:1000px){#ak-db{grid-template-columns:1fr 1fr!important}}</style>
+</body>
+</html>
