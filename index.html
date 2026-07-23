@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
-<script>const _t=localStorage.getItem("theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");document.documentElement.dataset.theme=_t;function tgT(){const d=document.documentElement;d.dataset.theme=d.dataset.theme==="dark"?"light":"dark";localStorage.setItem("theme",d.dataset.theme)}</script>
+<script>const _t=localStorage.getItem("theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");document.documentElement.dataset.theme=_t;function tgT(){const d=document.documentElement;d.dataset.theme=d.dataset.theme==="dark"?"light":"dark";localStorage.setItem("theme",d.dataset.theme)}function tgM(){const d=document.documentElement;const o=!d.classList.contains("mnav");d.classList.toggle("mnav",o);const b=document.querySelector(".burger");if(b)b.setAttribute("aria-expanded",o)}addEventListener("click",e=>{const a=e.target.closest("nav.main a");if(a&&document.documentElement.classList.contains("mnav"))tgM()});addEventListener("keydown",e=>{if(e.key==="Escape"&&document.documentElement.classList.contains("mnav"))tgM()});</script>
 </head>
 <body>
 
@@ -17,14 +17,16 @@
   <div class="wrap">
     <a class="logo" href="index.html">Араик Месропов<b>.</b></a>
     <nav class="main" aria-label="Основная навигация">
-      <a href="#work" class="hide-s">Работы</a>
-      <a href="#about" class="hide-m">Обо мне</a>
+      <a href="#work">Работы</a>
+      <a href="#about">Обо мне</a>
       <a href="#contact">Контакт</a>
       <a class="lang" href="en/index.html"><b>RU</b> · EN</a>
       <button class="tbtn" onclick="tgT()" aria-label="Переключить тему"></button>
     </nav>
+    <button class="burger" aria-label="Меню" aria-expanded="false" onclick="tgM()"><span></span><span></span><span></span></button>
   </div>
 </header>
+<div class="mm-ov" onclick="tgM()" aria-hidden="true"></div>
 
 <main>
 <section class="hero-open wrap">
