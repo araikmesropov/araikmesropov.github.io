@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AKVPN — VPN-сервис с управлением через Telegram · Араик Месропов</title>
+<title>AKVPN – VPN-сервис с управлением через Telegram · Араик Месропов</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
-<script>const _t=localStorage.getItem("theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");document.documentElement.dataset.theme=_t;function tgT(){const d=document.documentElement;d.dataset.theme=d.dataset.theme==="dark"?"light":"dark";localStorage.setItem("theme",d.dataset.theme)}function tgM(){const d=document.documentElement;const o=!d.classList.contains("mnav");d.classList.toggle("mnav",o);const b=document.querySelector(".burger");if(b)b.setAttribute("aria-expanded",o)}addEventListener("DOMContentLoaded",function(){var nav=document.querySelector("nav.main");if(!nav||document.querySelector(".mmenu"))return;var mm=document.createElement("nav");mm.className="mmenu";mm.setAttribute("aria-label","Мобильное меню");mm.innerHTML=nav.innerHTML;document.body.appendChild(mm);var tt=document.createElement("button");tt.className="totop";tt.setAttribute("aria-label","Наверх");tt.innerHTML="<svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 19V5M5 12l7-7 7 7\"/></svg>";tt.onclick=function(){window.scrollTo({top:0,behavior:"smooth"})};document.body.appendChild(tt);var st=false;addEventListener("scroll",function(){var s=window.scrollY>400;if(s!==st){st=s;document.documentElement.classList.toggle("scrolled",s)}},{passive:true});});addEventListener("click",function(e){var a=e.target.closest(".mmenu a");if(a&&document.documentElement.classList.contains("mnav"))setTimeout(tgM,60)});addEventListener("keydown",function(e){if(e.key==="Escape"&&document.documentElement.classList.contains("mnav"))tgM()});</script>
+<script>const _t=localStorage.getItem("theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");document.documentElement.dataset.theme=_t;function typoBind(root){if(!root)return;try{var re=/(^|[\s(\u00AB\u201E"'\u2013\u2014\u2026])([0-9A-Za-z\u0410-\u044F\u0401\u0451]{1,2}|\u0434\u043B\u044F|\u043F\u0440\u0438|\u043F\u043E\u0434|\u043D\u0430\u0434|\u0431\u0435\u0437|\u043F\u0440\u043E|\u0447\u0442\u043E|\u043A\u0430\u043A|\u044D\u0442\u043E|\u0438\u043B\u0438|\u0442\u0430\u043A|\u0443\u0436\u0435|the|and|but|for|not)[ \t]+/g;var w=document.createTreeWalker(root,NodeFilter.SHOW_TEXT,null,false),ns=[],n;while(n=w.nextNode())ns.push(n);ns.forEach(function(t){var pn=t.parentNode;if(pn&&/^(SCRIPT|STYLE|CODE|PRE|TEXTAREA)$/.test(pn.nodeName))return;var v=t.nodeValue,p;if(!v||!v.trim())return;do{p=v;v=v.replace(re,'$1$2\u00A0')}while(v!==p);if(v!==t.nodeValue)t.nodeValue=v})}catch(e){}}function tgT(){const d=document.documentElement;d.dataset.theme=d.dataset.theme==="dark"?"light":"dark";localStorage.setItem("theme",d.dataset.theme)}function tgM(){const d=document.documentElement;const o=!d.classList.contains("mnav");d.classList.toggle("mnav",o);const b=document.querySelector(".burger");if(b)b.setAttribute("aria-expanded",o)}addEventListener("DOMContentLoaded",function(){typoBind(document.body);var nav=document.querySelector("nav.main");if(!nav||document.querySelector(".mmenu"))return;var mm=document.createElement("nav");mm.className="mmenu";mm.setAttribute("aria-label","Мобильное меню");mm.innerHTML=nav.innerHTML;document.body.appendChild(mm);var tt=document.createElement("button");tt.className="totop";tt.setAttribute("aria-label","Наверх");tt.innerHTML="<svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 19V5M5 12l7-7 7 7\"/></svg>";tt.onclick=function(){window.scrollTo({top:0,behavior:"smooth"})};document.body.appendChild(tt);var st=false;addEventListener("scroll",function(){var s=window.scrollY>400;if(s!==st){st=s;document.documentElement.classList.toggle("scrolled",s)}},{passive:true});});addEventListener("click",function(e){var a=e.target.closest(".mmenu a");if(a&&document.documentElement.classList.contains("mnav"))setTimeout(tgM,60)});addEventListener("keydown",function(e){if(e.key==="Escape"&&document.documentElement.classList.contains("mnav"))tgM()});</script>
 </head>
 <body>
 
@@ -30,12 +30,19 @@
 <div class="case-hero wrap">
   <div class="row"><span class="k">Продуктовая логика</span><span class="badge">Концепт · в разработке</span></div>
   <h1 class="d" style="margin:16px 0 10px">AKVPN<span class="dot">.</span></h1>
-  <p class="lead" style="max-width:640px">Покупка и подписка — в Telegram. Подключение — в один тап через VPN-клиент.</p>
+  <p class="lead" style="max-width:640px">Покупка и подписка – в Telegram. Подключение – в один тап через VPN-клиент.</p>
   <div class="meta-chips">
-    <span class="chip">Роль: <b>юзер-флоу — логика сценариев и отрисовка</b></span>
+    <span class="chip">Роль: <b>юзер-флоу – логика сценариев и отрисовка</b></span>
     <span class="chip">Срок: <b>~2 месяца, середина пути</b></span>
   </div>
 </div>
+
+<div class="wrap"><div class="stageline reveal">
+  <div class="st"><span>Проблема</span><b>Сложное подключение VPN</b></div>
+  <div class="st"><span>Флоу</span><b>Покупка в Telegram</b></div>
+  <div class="st"><span>Ключи</span><b>Биллинг и выдача</b></div>
+  <div class="st"><span>Подключение</span><b>Один тап в клиент</b></div>
+</div></div>
 
 <div class="wrap">
   <div class="tile ink reveal" style="padding:36px 30px">
@@ -65,11 +72,11 @@
         <rect x="330" y="290" width="260" height="54" rx="10" fill="none" stroke="#3B82F6" stroke-width="1.5"/>
         <text x="460" y="315" text-anchor="middle" fill="#3B82F6">VPN-клиент · WireGuard</text>
         <text x="460" y="333" text-anchor="middle" fill="#A1A1AA" font-size="11">Happ и аналоги</text>
-        <text x="20" y="384" fill="#71717A" font-size="12">партнёрка · рефералы — в ядре модели данных</text>
+        <text x="20" y="384" fill="#71717A" font-size="12">партнёрка · рефералы – в ядре модели данных</text>
       </g>
     </svg>
   </div>
-  <p class="figcap">Ключевой фрагмент юзер-флоу, перерисованный из проектной документации · целевой показатель — цель проектирования, не измеренная метрика</p>
+  <p class="figcap">Ключевой фрагмент юзер-флоу, перерисованный из проектной документации · целевой показатель – цель проектирования, не измеренная метрика</p>
 
   <div class="statband" style="margin-top:28px">
     <div class="tile pad stat reveal"><div class="n">12</div><div class="l">страниц документации</div></div>
@@ -99,7 +106,7 @@
         <span class="ar">→</span>
         <span class="fc acc" style="background:transparent">клиент</span>
       </div>
-      <p class="cap">Гипотеза: если покупка живёт там, где пользователь уже есть, а настройка — импорт готового профиля, барьер входа падает. Проверка после запуска: конверсия /start → активное подключение.</p>
+      <p class="cap">Гипотеза: если покупка живёт там, где пользователь уже есть, а настройка – импорт готового профиля, барьер входа падает. Проверка после запуска: конверсия /start → активное подключение.</p>
     </div>
   </div>
 
@@ -119,7 +126,7 @@
         <p class="cap" style="margin-top:10px;font-size:13.5px">VPS-серверы · панель Marzban</p>
       </div>
     </div>
-    <p class="cap" style="margin-top:14px">Схемы отражают проектный замысел; техническая валидация — этап разработки.</p>
+    <p class="cap" style="margin-top:14px">Схемы отражают проектный замысел; техническая валидация – этап разработки.</p>
   </div>
 
   <div class="bento" style="grid-template-columns:repeat(4,1fr);margin-top:36px" id="ak-db">
@@ -132,8 +139,8 @@
 
   <div class="tile ink pad reveal" style="margin-top:36px">
     <span class="k">Почему кейс почти без картинок</span>
-    <p class="big" style="font-size:clamp(19px,2.2vw,26px);margin:12px 0;line-height:1.3;max-width:800px">Проектирование продукта начинается с логики, сценариев и модели данных — а не с UI<span style="color:var(--copper-light)">.</span></p>
-    <p class="cap" style="opacity:.75">UI MiniApp — следующий этап; кейс будет дополнен интерфейсом и фактом запуска.</p>
+    <p class="big" style="font-size:clamp(19px,2.2vw,26px);margin:12px 0;line-height:1.3;max-width:800px">Проектирование продукта начинается с логики, сценариев и модели данных – а не с UI<span style="color:var(--copper-light)">.</span></p>
+    <p class="cap" style="opacity:.75">UI MiniApp – следующий этап; кейс будет дополнен интерфейсом и фактом запуска.</p>
   </div>
 </div>
 

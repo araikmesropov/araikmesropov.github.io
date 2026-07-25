@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Камертон — павильон-трансформер · Араик Месропов</title>
+<title>Камертон – павильон-трансформер · Араик Месропов</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
-<script>const _t=localStorage.getItem("theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");document.documentElement.dataset.theme=_t;function tgT(){const d=document.documentElement;d.dataset.theme=d.dataset.theme==="dark"?"light":"dark";localStorage.setItem("theme",d.dataset.theme)}function tgM(){const d=document.documentElement;const o=!d.classList.contains("mnav");d.classList.toggle("mnav",o);const b=document.querySelector(".burger");if(b)b.setAttribute("aria-expanded",o)}addEventListener("DOMContentLoaded",function(){var nav=document.querySelector("nav.main");if(!nav||document.querySelector(".mmenu"))return;var mm=document.createElement("nav");mm.className="mmenu";mm.setAttribute("aria-label","Мобильное меню");mm.innerHTML=nav.innerHTML;document.body.appendChild(mm);var tt=document.createElement("button");tt.className="totop";tt.setAttribute("aria-label","Наверх");tt.innerHTML="<svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 19V5M5 12l7-7 7 7\"/></svg>";tt.onclick=function(){window.scrollTo({top:0,behavior:"smooth"})};document.body.appendChild(tt);var st=false;addEventListener("scroll",function(){var s=window.scrollY>400;if(s!==st){st=s;document.documentElement.classList.toggle("scrolled",s)}},{passive:true});});addEventListener("click",function(e){var a=e.target.closest(".mmenu a");if(a&&document.documentElement.classList.contains("mnav"))setTimeout(tgM,60)});addEventListener("keydown",function(e){if(e.key==="Escape"&&document.documentElement.classList.contains("mnav"))tgM()});</script>
+<script>const _t=localStorage.getItem("theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");document.documentElement.dataset.theme=_t;function typoBind(root){if(!root)return;try{var re=/(^|[\s(\u00AB\u201E"'\u2013\u2014\u2026])([0-9A-Za-z\u0410-\u044F\u0401\u0451]{1,2}|\u0434\u043B\u044F|\u043F\u0440\u0438|\u043F\u043E\u0434|\u043D\u0430\u0434|\u0431\u0435\u0437|\u043F\u0440\u043E|\u0447\u0442\u043E|\u043A\u0430\u043A|\u044D\u0442\u043E|\u0438\u043B\u0438|\u0442\u0430\u043A|\u0443\u0436\u0435|the|and|but|for|not)[ \t]+/g;var w=document.createTreeWalker(root,NodeFilter.SHOW_TEXT,null,false),ns=[],n;while(n=w.nextNode())ns.push(n);ns.forEach(function(t){var pn=t.parentNode;if(pn&&/^(SCRIPT|STYLE|CODE|PRE|TEXTAREA)$/.test(pn.nodeName))return;var v=t.nodeValue,p;if(!v||!v.trim())return;do{p=v;v=v.replace(re,'$1$2\u00A0')}while(v!==p);if(v!==t.nodeValue)t.nodeValue=v})}catch(e){}}function tgT(){const d=document.documentElement;d.dataset.theme=d.dataset.theme==="dark"?"light":"dark";localStorage.setItem("theme",d.dataset.theme)}function tgM(){const d=document.documentElement;const o=!d.classList.contains("mnav");d.classList.toggle("mnav",o);const b=document.querySelector(".burger");if(b)b.setAttribute("aria-expanded",o)}addEventListener("DOMContentLoaded",function(){typoBind(document.body);var nav=document.querySelector("nav.main");if(!nav||document.querySelector(".mmenu"))return;var mm=document.createElement("nav");mm.className="mmenu";mm.setAttribute("aria-label","Мобильное меню");mm.innerHTML=nav.innerHTML;document.body.appendChild(mm);var tt=document.createElement("button");tt.className="totop";tt.setAttribute("aria-label","Наверх");tt.innerHTML="<svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 19V5M5 12l7-7 7 7\"/></svg>";tt.onclick=function(){window.scrollTo({top:0,behavior:"smooth"})};document.body.appendChild(tt);var st=false;addEventListener("scroll",function(){var s=window.scrollY>400;if(s!==st){st=s;document.documentElement.classList.toggle("scrolled",s)}},{passive:true});});addEventListener("click",function(e){var a=e.target.closest(".mmenu a");if(a&&document.documentElement.classList.contains("mnav"))setTimeout(tgM,60)});addEventListener("keydown",function(e){if(e.key==="Escape"&&document.documentElement.classList.contains("mnav"))tgM()});</script>
 </head>
 <body>
 
@@ -32,28 +32,47 @@
   <h1 class="d" style="margin:16px 0 10px">Камертон<span class="dot">.</span></h1>
   <p class="lead" style="max-width:560px">Один зал. Шесть событий. Одна архитектура.</p>
   <div class="meta-chips">
-    <span class="chip">Роль: <b>соло — концепция, логика, визуализации, подача</b></span>
+    <span class="chip">Роль: <b>соло – концепция, логика, визуализации, подача</b></span>
     <span class="chip">Конкурсный проект · <b>2026</b></span>
     <span class="chip">Срок: <b>2 недели</b></span>
   </div>
 </div>
 
+<div class="wrap"><div class="stageline reveal">
+  <div class="st"><span>Бриф</span><b>Конкурсное ТЗ</b></div>
+  <div class="st"><span>Концепция</span><b>3 варианта → «Камертон»</b></div>
+  <div class="st"><span>Система</span><b>10 порталов, 7 элементов</b></div>
+  <div class="st"><span>Подача</span><b>12 слайдов и визуализации</b></div>
+</div></div>
+
 <div class="wrap">
-  <div class="tile shot reveal"><img src="assets/1.png" alt="Павильон Камертон: монолит из вертикальных ламелей тона шампань в утреннем парке"></div>
-  <p class="figcap">Дневной режим: цельный брус с вертикальной графикой ламелей · вечером щели светятся — «строчки нотного стана»</p>
+  <div class="cmp reveal" id="kmCmp" style="--x:50%">
+    <img class="base" src="assets/2.png" alt="Камертон вечером: щели фасада светятся тёплым светом, гости у входа">
+    <div class="top"><img src="assets/1.png" alt="Камертон днём: цельный брус вертикальных ламелей тона шампань в парке"></div>
+    <div class="cmp-h" tabindex="0" role="slider" aria-label="Сравнение: день и ночь" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l-4 6 4 6M15 6l4 6-4 6"/></svg></div>
+    <span class="lbl l">День</span><span class="lbl r">Ночь</span>
+  </div>
+  <p class="figcap">Потяните ползунок: днём – цельный брус с вертикальной графикой ламелей, вечером щели светятся, как строчки нотного стана</p>
 
   <div class="statband" style="margin-top:28px">
     <div class="tile pad stat reveal"><div class="n">6</div><div class="l">сценариев событий</div></div>
     <div class="tile pad stat reveal"><div class="n">10</div><div class="l">порталов · шаг 3 м</div></div>
     <div class="tile pad stat reveal"><div class="n">7</div><div class="l">типов мобильных элементов</div></div>
-    <div class="tile copper pad stat reveal"><div class="n">100/100</div><div class="l">высший балл конкурса</div></div>
+  </div>
+
+  <div class="tile ink pad reveal" style="margin-top:24px;display:flex;align-items:center;gap:clamp(18px,3vw,34px);flex-wrap:wrap">
+    <div style="font-weight:700;letter-spacing:-.03em;font-size:clamp(46px,8vw,86px);line-height:.9">100<span style="color:var(--copper-light)">/</span>100</div>
+    <div style="flex:1;min-width:230px">
+      <span class="k">Оценка жюри</span>
+      <p class="big" style="font-size:clamp(18px,2vw,25px);margin-top:8px;line-height:1.3">Высший балл конкурса – за концепцию, механику, свет и подачу в одном решении<span style="color:var(--copper-light)">.</span></p>
+    </div>
   </div>
 
   <div class="bento" style="grid-template-columns:1fr 1fr 1fr;margin-top:36px" id="km-concepts">
     <div class="tile beige pad reveal">
       <span class="k">Вариант А</span>
       <p class="big" style="font-size:20px;margin:10px 0 6px">«Футляр»</p>
-      <p class="cap">Метафора статична и названа в самом ТЗ — её увидят у десятков участников. Отклонена.</p>
+      <p class="cap">Метафора статична и названа в самом ТЗ – её увидят у десятков участников. Отклонена.</p>
     </div>
     <div class="tile beige pad reveal">
       <span class="k">Вариант Б</span>
@@ -61,9 +80,9 @@
       <p class="cap">Открытая техноэстетика конфликтует с премиальностью. Отклонена.</p>
     </div>
     <div class="tile ink pad reveal">
-      <span class="k">Вариант В — выбран</span>
+      <span class="k">Вариант В – выбран</span>
       <p class="big" style="font-size:20px;margin:10px 0 6px">«Камертон»</p>
-      <p class="cap">Трансформация, образ, свет и акустика — из одного решения.</p>
+      <p class="cap">Трансформация, образ, свет и акустика – из одного решения.</p>
     </div>
   </div>
   <p class="figcap">Реальный артефакт процесса: три концепции, проработанные до выбора</p>
@@ -73,7 +92,8 @@
     <div class="tile pad reveal" style="display:flex;flex-direction:column;justify-content:center;gap:14px">
       <span class="k">Система</span>
       <p class="big" style="font-size:clamp(19px,2vw,24px);line-height:1.3">Всё подвижное держат и перемещают 10 порталов-рёбер<span style="color:var(--copper)">.</span></p>
-      <p class="cap">Рельсы, лебёдки, свет и акустика скрыты в технологическом поясе — гость не видит механику.</p>
+      <div class="ribs" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      <p class="cap">Рельсы, лебёдки, свет и акустика скрыты в технологическом поясе – гость не видит механику. Шаг ребра – 3 м.</p>
       <div class="row"><span class="chip">стены</span><span class="chip">призмы</span><span class="chip">сцена</span><span class="chip">трибуны</span><span class="chip">экраны</span><span class="chip">баннеры</span><span class="chip">кольцо</span></div>
     </div>
   </div>
@@ -83,12 +103,12 @@
     <div style="overflow-x:auto;padding:0 26px 20px">
       <table class="mx">
         <tr><th>Событие</th><th>Конфигурация</th><th>Гости</th><th>Монтаж</th></tr>
-        <tr><td class="ev">01 Галерея</td><td>анфилада мобильных стен · RT 1,0</td><td class="num">400</td><td class="num">6 ч<span class="mmb" style="--w:75%"></span></td></tr>
-        <tr><td class="ev">02 Презентация</td><td>кольцо ⌀12 м · три экрана · blackout + луч</td><td class="num">250</td><td class="num">4 ч<span class="mmb" style="--w:50%"></span></td></tr>
-        <tr><td class="ev">03 Показ мод</td><td>подиум 18 × 2 · backstage за стенами</td><td class="num">260</td><td class="num">6 ч<span class="mmb" style="--w:75%"></span></td></tr>
-        <tr><td class="ev">04 Концерт</td><td>сцена 12 × 8 + раковина · RT 1,5</td><td class="num">320</td><td class="num">8 ч<span class="mmb" style="--w:100%"></span></td></tr>
-        <tr><td class="ev">05 Лекция</td><td>сцена 6 × 4 · экран · RT 0,9</td><td class="num">200</td><td class="num">3 ч<span class="mmb" style="--w:37%"></span></td></tr>
-        <tr><td class="ev">06 Иммерсив</td><td>36 призм · проекция 360° · таймкод</td><td class="num">—</td><td class="num">8 ч<span class="mmb" style="--w:100%"></span></td></tr>
+        <tr><td class="ev">Галерея</td><td>анфилада мобильных стен · RT 1,0</td><td class="num">400</td><td class="num">6 ч<span class="mmb" style="--w:75%"></span></td></tr>
+        <tr><td class="ev">Презентация</td><td>кольцо ⌀12 м · три экрана · blackout + луч</td><td class="num">250</td><td class="num">4 ч<span class="mmb" style="--w:50%"></span></td></tr>
+        <tr><td class="ev">Показ мод</td><td>подиум 18 × 2 · backstage за стенами</td><td class="num">260</td><td class="num">6 ч<span class="mmb" style="--w:75%"></span></td></tr>
+        <tr><td class="ev">Концерт</td><td>сцена 12 × 8 + раковина · RT 1,5</td><td class="num">320</td><td class="num">8 ч<span class="mmb" style="--w:100%"></span></td></tr>
+        <tr><td class="ev">Лекция</td><td>сцена 6 × 4 · экран · RT 0,9</td><td class="num">200</td><td class="num">3 ч<span class="mmb" style="--w:37%"></span></td></tr>
+        <tr><td class="ev">Иммерсив</td><td>36 призм · проекция 360° · таймкод</td><td class="num">–</td><td class="num">8 ч<span class="mmb" style="--w:100%"></span></td></tr>
       </table>
     </div>
   </div>
@@ -97,28 +117,28 @@
   <div class="bento" style="grid-template-columns:1fr 1.4fr;margin-top:36px" id="km-cut">
     <div class="tile pad reveal" style="display:flex;flex-direction:column;justify-content:center;gap:16px">
       <span class="k">Драматургия входа</span>
-      <div style="display:flex;align-items:flex-end;gap:14px;height:96px">
-        <div style="text-align:center;display:flex;flex-direction:column;justify-content:flex-end;height:100%"><div class="vb" style="--h:34px"></div><p class="cap" style="margin-top:8px">3,6 м<br>welcome</p></div>
-        <span style="color:var(--copper);font-weight:700;font-size:20px;padding-bottom:34px">→</span>
-        <div style="text-align:center;display:flex;flex-direction:column;justify-content:flex-end;height:100%"><div class="vb fill" style="--h:86px"></div><p class="cap" style="margin-top:8px">9 м<br>зал</p></div>
+      <p class="big" style="font-size:clamp(18px,1.9vw,23px);line-height:1.3">Сжатие – и раскрытие: перепад высот и есть главная эмоция маршрута<span style="color:var(--copper)">.</span></p>
+      <div style="display:flex;align-items:flex-end;gap:18px;height:134px;margin-top:2px">
+        <div style="text-align:center;display:flex;flex-direction:column;justify-content:flex-end;height:100%"><div class="vb" style="--h:48px"></div><p class="cap" style="margin-top:8px">3,6 м<br>вход</p></div>
+        <span style="color:var(--copper);font-weight:700;font-size:22px;padding-bottom:48px">→</span>
+        <div style="text-align:center;display:flex;flex-direction:column;justify-content:flex-end;height:100%"><div class="vb fill" style="--h:118px"></div><p class="cap" style="margin-top:8px">9 м<br>зал</p></div>
+        <div style="margin-left:auto;text-align:right;padding-bottom:4px"><div style="font-weight:700;font-size:clamp(28px,3.4vw,42px);letter-spacing:-.02em;color:var(--copper);line-height:1">×2,5</div><p class="cap" style="margin-top:4px">перепад<br>высоты</p></div>
       </div>
-      <p class="cap">Компрессия — и раскрытие: контраст высот и есть главная эмоция маршрута.</p>
     </div>
-    <div class="tile shot reveal"><img src="assets/slide-07.jpg" alt="Слайд подачи: разрез павильона — компрессия и раскрытие"></div>
+    <div class="tile shot reveal"><img src="assets/slide-07.jpg" alt="Слайд подачи: разрез павильона – компрессия и раскрытие"></div>
   </div>
 
   <div class="tile shot reveal" style="margin-top:36px"><img src="assets/8.png" alt="Визуализация: симфонический концерт, свет из порталов, полный зал"></div>
-  <p class="figcap">Сценарий «концерт»: пять слоёв света на порталах — в зале нет ни одной стойки · ≈20 м³ воздуха на слушателя (проектная оценка, требует верификации акустиком)</p>
+  <p class="figcap">Сценарий «концерт»: пять слоёв света на порталах – в зале нет ни одной стойки · ≈20 м³ воздуха на слушателя (проектная оценка, требует верификации акустиком)</p>
 
-  <div class="bento" style="grid-template-columns:1.4fr 1fr;margin-top:36px" id="km-final">
-    <div class="tile shot reveal"><img src="assets/slide-12.jpg" alt="Финальный слайд подачи: вчера — концерт, утром — вернисаж"></div>
-    <div class="tile ink pad reveal" style="display:flex;flex-direction:column;justify-content:center;gap:14px">
-      <span class="k">Итог</span>
-      <p class="big" style="font-size:clamp(19px,2vw,24px);line-height:1.3">Подача за 2 недели соло: концепция · 12 слайдов · визуализации. Высший балл<span style="color:var(--copper-light)">.</span></p>
-      <p class="cap">Одна идея объясняет образ, механику, свет и акустику — проект непротиворечив на каждом шаге. AI-пайплайн помог быстрее проверить визуальные направления.</p>
-      <div class="eq" aria-hidden="true" style="margin-top:18px;color:var(--copper-light)"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-      <p class="cap" style="opacity:.7">Проект публикуется под изменённым названием; площадка конкурса не разглашается.</p>
-    </div>
+  <div class="tile shot reveal" style="margin-top:36px"><img src="assets/slide-12.jpg" alt="Финальный слайд подачи: вечером – концерт, утром – вернисаж"></div>
+
+  <div class="tile ink pad reveal" style="margin-top:18px">
+    <span class="k">Итог</span>
+    <p class="big" style="font-size:clamp(19px,2.1vw,26px);line-height:1.3;margin-top:8px;max-width:900px">Подача за 2 недели соло: концепция, 12 слайдов, визуализации – одна идея на всех уровнях<span style="color:var(--copper-light)">.</span></p>
+    <p class="cap" style="margin-top:12px;max-width:780px">Одна идея объясняет образ, механику, свет и акустику – проект непротиворечив на каждом шаге. AI-пайплайн помог быстрее проверить визуальные направления.</p>
+    <div class="eq" aria-hidden="true" style="margin-top:18px;color:var(--copper-light)"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <p class="cap" style="opacity:.7;margin-top:14px">Проект публикуется под изменённым названием; площадка конкурса не разглашается.</p>
   </div>
 </div>
 
@@ -139,6 +159,7 @@ document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 const rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
 if(!rm){const io2=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;io2.unobserve(e.target);const n=e.target,t=parseInt(n.dataset.cnt),s=performance.now(),d=750;const step=x=>{const p=Math.min(1,(x-s)/d);n.textContent=Math.round(t*(.15+.85*p*(2-p)));if(p<1)requestAnimationFrame(step)};requestAnimationFrame(step)}),{threshold:.6});
 document.querySelectorAll('.stat .n').forEach(n=>{const v=n.textContent.trim();if(/^\d+$/.test(v)&&+v>1){n.dataset.cnt=v;io2.observe(n)}})}
+(function(){var el=document.getElementById('kmCmp');if(!el)return;var h=el.querySelector('.cmp-h');var x=50;function set(v){x=Math.max(2,Math.min(98,v));el.style.setProperty('--x',x+'%');if(h)h.setAttribute('aria-valuenow',Math.round(x))}function pt(e){var r=el.getBoundingClientRect();var cx=(e.touches&&e.touches[0])?e.touches[0].clientX:e.clientX;set((cx-r.left)/r.width*100)}var d=false;el.addEventListener('pointerdown',function(e){d=true;try{el.setPointerCapture(e.pointerId)}catch(_){}pt(e)});el.addEventListener('pointermove',function(e){if(d)pt(e)});window.addEventListener('pointerup',function(){d=false});if(h)h.addEventListener('keydown',function(e){if(e.key==='ArrowLeft'){set(x-4);e.preventDefault()}else if(e.key==='ArrowRight'){set(x+4);e.preventDefault()}});set(50);})();
 </script>
 <style>@media(max-width:820px){#km-concepts{grid-template-columns:1fr!important}#km-sys,#km-cut,#km-final{grid-template-columns:1fr!important}}</style>
 </body>

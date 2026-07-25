@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Pulse — a SaaS for event venues · Araik Mesropov</title>
+<title>Pulse – a SaaS for event venues · Araik Mesropov</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../styles.css">
-<script>const _t=localStorage.getItem("theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");document.documentElement.dataset.theme=_t;function tgT(){const d=document.documentElement;d.dataset.theme=d.dataset.theme==="dark"?"light":"dark";localStorage.setItem("theme",d.dataset.theme)}function tgM(){const d=document.documentElement;const o=!d.classList.contains("mnav");d.classList.toggle("mnav",o);const b=document.querySelector(".burger");if(b)b.setAttribute("aria-expanded",o)}addEventListener("DOMContentLoaded",function(){var nav=document.querySelector("nav.main");if(!nav||document.querySelector(".mmenu"))return;var mm=document.createElement("nav");mm.className="mmenu";mm.setAttribute("aria-label","Мобильное меню");mm.innerHTML=nav.innerHTML;document.body.appendChild(mm);var tt=document.createElement("button");tt.className="totop";tt.setAttribute("aria-label","Наверх");tt.innerHTML="<svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 19V5M5 12l7-7 7 7\"/></svg>";tt.onclick=function(){window.scrollTo({top:0,behavior:"smooth"})};document.body.appendChild(tt);var st=false;addEventListener("scroll",function(){var s=window.scrollY>400;if(s!==st){st=s;document.documentElement.classList.toggle("scrolled",s)}},{passive:true});});addEventListener("click",function(e){var a=e.target.closest(".mmenu a");if(a&&document.documentElement.classList.contains("mnav"))setTimeout(tgM,60)});addEventListener("keydown",function(e){if(e.key==="Escape"&&document.documentElement.classList.contains("mnav"))tgM()});</script>
+<script>const _t=localStorage.getItem("theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");document.documentElement.dataset.theme=_t;function typoBind(root){if(!root)return;try{var re=/(^|[\s(\u00AB\u201E"'\u2013\u2014\u2026])([0-9A-Za-z\u0410-\u044F\u0401\u0451]{1,2}|\u0434\u043B\u044F|\u043F\u0440\u0438|\u043F\u043E\u0434|\u043D\u0430\u0434|\u0431\u0435\u0437|\u043F\u0440\u043E|\u0447\u0442\u043E|\u043A\u0430\u043A|\u044D\u0442\u043E|\u0438\u043B\u0438|\u0442\u0430\u043A|\u0443\u0436\u0435|the|and|but|for|not)[ \t]+/g;var w=document.createTreeWalker(root,NodeFilter.SHOW_TEXT,null,false),ns=[],n;while(n=w.nextNode())ns.push(n);ns.forEach(function(t){var pn=t.parentNode;if(pn&&/^(SCRIPT|STYLE|CODE|PRE|TEXTAREA)$/.test(pn.nodeName))return;var v=t.nodeValue,p;if(!v||!v.trim())return;do{p=v;v=v.replace(re,'$1$2\u00A0')}while(v!==p);if(v!==t.nodeValue)t.nodeValue=v})}catch(e){}}function tgT(){const d=document.documentElement;d.dataset.theme=d.dataset.theme==="dark"?"light":"dark";localStorage.setItem("theme",d.dataset.theme)}function tgM(){const d=document.documentElement;const o=!d.classList.contains("mnav");d.classList.toggle("mnav",o);const b=document.querySelector(".burger");if(b)b.setAttribute("aria-expanded",o)}addEventListener("DOMContentLoaded",function(){typoBind(document.body);var nav=document.querySelector("nav.main");if(!nav||document.querySelector(".mmenu"))return;var mm=document.createElement("nav");mm.className="mmenu";mm.setAttribute("aria-label","Мобильное меню");mm.innerHTML=nav.innerHTML;document.body.appendChild(mm);var tt=document.createElement("button");tt.className="totop";tt.setAttribute("aria-label","Наверх");tt.innerHTML="<svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 19V5M5 12l7-7 7 7\"/></svg>";tt.onclick=function(){window.scrollTo({top:0,behavior:"smooth"})};document.body.appendChild(tt);var st=false;addEventListener("scroll",function(){var s=window.scrollY>400;if(s!==st){st=s;document.documentElement.classList.toggle("scrolled",s)}},{passive:true});});addEventListener("click",function(e){var a=e.target.closest(".mmenu a");if(a&&document.documentElement.classList.contains("mnav"))setTimeout(tgM,60)});addEventListener("keydown",function(e){if(e.key==="Escape"&&document.documentElement.classList.contains("mnav"))tgM()});</script>
 <style>
 .pui{background:#F1F2F4;border-radius:var(--r);padding:clamp(14px,2.5vw,28px)}
 .app{background:#FCFCFD;border:1px solid #E4E4E7;border-radius:14px;overflow:hidden;display:grid;grid-template-columns:200px 1fr;font-size:12.5px;color:#1A1917;box-shadow:0 20px 60px rgba(20,18,16,.1)}
@@ -47,6 +47,17 @@
 .phone{width:230px;background:#09090B;border-radius:28px;padding:8px;box-shadow:0 24px 60px rgba(20,18,16,.28)}
 .pscr{background:#FCFCFD;border-radius:21px;overflow:hidden;font-size:11px;color:#1A1917}
 .tok{height:52px;border-radius:10px;display:flex;align-items:flex-end;padding:8px;font-family:var(--mono);font-size:9.5px}
+.iosrow{display:flex;gap:20px;justify-content:center;flex-wrap:wrap}
+.iosrow .phone{width:212px}
+.iosbar{display:flex;align-items:center;justify-content:space-between;padding:9px 15px 5px;font-size:10.5px;font-weight:700;color:#111}
+.iosbar .r{display:flex;align-items:center;gap:6px}
+.iosbar .bat{position:relative;width:20px;height:10px;border:1.2px solid #111;border-radius:3px;opacity:.9}
+.iosbar .bat::before{content:"";position:absolute;top:2px;left:1.5px;bottom:2px;width:72%;background:#111;border-radius:1px}
+.iosbar .bat::after{content:"";position:absolute;right:-3px;top:3px;width:2px;height:4px;background:#111;border-radius:0 1px 1px 0}
+.ioshd{padding:2px 14px 10px}
+.ioshd b{font-size:14px;letter-spacing:-.02em}
+.ioscard{margin:0 12px 10px;border:1px solid #E9EAEC;border-radius:12px;padding:11px 12px;background:#fff}
+.ioscard .tgl{padding:6px 0}
 </style>
 </head>
 <body>
@@ -67,15 +78,22 @@
 
 <main>
 <div class="case-hero wrap">
-  <div class="row"><span class="k">SaaS · design system</span><span class="badge">Concept project</span></div>
+  <div class="row"><span class="k">SaaS · venue management</span><span class="badge">Concept project</span></div>
   <h1 class="d" style="margin:16px 0 10px">Pulse<span class="dot">.</span></h1>
-  <p class="lead" style="max-width:640px">An operating system for an event venue: schedule, hall changeovers, crew and occupancy — on one screen.</p>
+  <p class="lead" style="max-width:640px">An operating system for an event venue: schedule, hall changeovers, crew and occupancy – on one screen.</p>
   <div class="meta-chips">
-    <span class="chip">Role: <b>solo — product logic, UX, UI, design system</b></span>
+    <span class="chip">Role: <b>solo – product logic, UX, UI, UI kit</b></span>
     <span class="chip">Platform: <b>web · desktop-first + mobile companion</b></span>
-    <span class="chip"><b>Concept</b> — no real client</span>
+    <span class="chip"><b>Concept</b> – no real client</span>
   </div>
 </div>
+
+<div class="wrap"><div class="stageline reveal">
+  <div class="st"><span>Framing</span><b>From the Kamerton case</b></div>
+  <div class="st"><span>Scenarios</span><b>6 event formats</b></div>
+  <div class="st"><span>Screens</span><b>Calendar → passport → dashboard</b></div>
+  <div class="st"><span>System</span><b>UI kit and statuses</b></div>
+</div></div>
 
 <div class="wrap">
 
@@ -100,7 +118,7 @@
       </div>
     </div>
   </div>
-  <p class="figcap">Screen 01 · Calendar: events and changeover windows in one grid — a rigging conflict is flagged at planning time, not on the event day</p>
+  <p class="figcap">Calendar: events and changeover windows in one grid – a rigging conflict is flagged at planning time, not on the event day</p>
 
   <div class="statband" style="margin-top:28px">
     <div class="tile pad stat reveal"><div class="n">5</div><div class="l">screens in the concept scope</div></div>
@@ -117,14 +135,14 @@
       <span class="chip" style="border-color:#3F3F46;color:#A7ADB8">risk: lost rigging statuses</span>
       <span class="chip" style="border-color:#3F3F46;color:#A7ADB8">risk: crew misalignment</span>
     </div>
-    <p class="cap" style="margin-top:14px;opacity:.7">The risks are design assumptions; no venue interviews were conducted. Hall parameters come from the Kamerton competition project (<a href="case-kamerton.html" style="color:var(--copper-light)">case 01</a>).</p>
+    <p class="cap" style="margin-top:14px;opacity:.7">The risks are design assumptions; no venue interviews were conducted. Hall parameters come from the Kamerton competition project (<a href="case-kamerton.html" style="color:var(--copper-light)">case</a>).</p>
   </div>
 
   <div class="bento" style="grid-template-columns:1.35fr 1fr;margin-top:36px" id="pl-passport">
     <div class="pui reveal" style="padding:clamp(14px,2vw,24px)">
       <div class="app" style="grid-template-columns:1fr">
         <div>
-          <div class="tp"><b>Symphony night — Sat, Aug 8</b><span class="uibadge uib-ok">confirmed</span></div>
+          <div class="tp"><b>Symphony night – Sat, Aug 8</b><span class="uibadge uib-ok">confirmed</span></div>
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:14px">
             <div class="pcard">
               <h5>Hall configuration · Concert</h5>
@@ -147,16 +165,16 @@
       </div>
     </div>
     <div class="tile pad reveal" style="display:flex;flex-direction:column;justify-content:center;gap:14px">
-      <span class="k">Screen 02 · Event passport</span>
-      <p class="big" style="font-size:clamp(18px,2vw,23px);line-height:1.3">The hall configuration — those same 7 elements — turns into a crew checklist<span style="color:var(--copper)">.</span></p>
-      <p class="cap">Hypothesis: the passport shortens changeover-brief prep. Validation — a scenario test against the manual process.</p>
+      <span class="k">Event passport</span>
+      <p class="big" style="font-size:clamp(18px,2vw,23px);line-height:1.3">The hall configuration – those same 7 elements – turns into a crew checklist<span style="color:var(--copper)">.</span></p>
+      <p class="cap">Hypothesis: the passport shortens changeover-brief prep. Validation – a scenario test against the manual process.</p>
     </div>
   </div>
 
   <div class="bento" style="grid-template-columns:1fr 1.35fr;margin-top:36px" id="pl-dash">
     <div class="tile pad reveal" style="display:flex;flex-direction:column;justify-content:center;gap:14px">
-      <span class="k">Screen 03 · Owner dashboard</span>
-      <p class="big" style="font-size:clamp(18px,2vw,23px);line-height:1.3">Occupancy, revenue by format and the next changeover status — no digging through spreadsheets<span style="color:var(--copper)">.</span></p>
+      <span class="k">Owner dashboard</span>
+      <p class="big" style="font-size:clamp(18px,2vw,23px);line-height:1.3">Occupancy, revenue by format and the next changeover status – no digging through spreadsheets<span style="color:var(--copper)">.</span></p>
       <p class="cap">Numbers in the mockup are demo data for the concept.</p>
     </div>
     <div class="pui reveal" style="padding:clamp(14px,2vw,24px)">
@@ -201,14 +219,62 @@
       </div>
     </div>
     <div class="tile pad reveal" style="display:flex;flex-direction:column;justify-content:center;gap:14px">
-      <span class="k">Screens 04–05 · Crew mobile companion</span>
-      <p class="big" style="font-size:clamp(18px,2.2vw,24px);line-height:1.3">Task statuses are ticked from a phone right in the hall — the owner sees progress without phone calls<span style="color:var(--copper)">.</span></p>
-      <p class="cap">Hypothesis: a mobile checklist reduces lost statuses. Validation — a usability test of the mobile flow.</p>
+      <span class="k">Crew mobile companion</span>
+      <p class="big" style="font-size:clamp(18px,2.2vw,24px);line-height:1.3">Task statuses are ticked from a phone right in the hall – the owner sees progress without phone calls<span style="color:var(--copper)">.</span></p>
+      <p class="cap">Hypothesis: a mobile checklist reduces lost statuses. Validation – a usability test of the mobile flow.</p>
     </div>
   </div>
 
   <div class="tile pad reveal" style="margin-top:36px">
-    <span class="k">Design system · fragment</span>
+    <div class="sec-head" style="margin-bottom:18px"><span class="k">Companion on iOS</span><span class="cap">The same data, in the pocket of the crew lead and manager</span></div>
+    <div class="iosrow">
+      <div class="phone">
+        <div class="pscr">
+          <div class="iosbar"><span>9:41</span><span class="r">5G <span class="bat"></span></span></div>
+          <div class="ioshd"><p class="cap" style="margin-bottom:2px">Saturday, 8 Aug</p><b>Today</b></div>
+          <div class="ioscard" style="border-color:#2563EB;background:#DBEAFE">
+            <p style="font-size:10px;color:#1D4ED8;font-weight:600">Next changeover</p>
+            <p style="font-size:21px;font-weight:700;letter-spacing:-.02em;margin:2px 0">5 h 20 m</p>
+            <p style="font-size:10px;color:#1D4ED8">→ Concert · crew of 6</p>
+          </div>
+          <div class="ioscard"><b style="font-size:11px">Symphony night</b><p style="font-size:10px;color:#71717A;margin-top:2px">19:00 · 320 seats</p></div>
+          <div class="ioscard" style="opacity:.55"><b style="font-size:11px">Fashion show</b><p style="font-size:10px;color:#71717A;margin-top:2px">tomorrow · window 2 of 6 h</p></div>
+        </div>
+      </div>
+      <div class="phone">
+        <div class="pscr">
+          <div class="iosbar"><span>9:41</span><span class="r">5G <span class="bat"></span></span></div>
+          <div class="ioshd"><p class="cap" style="margin-bottom:2px">Event passport</p><b>Concert · hall</b></div>
+          <div class="ioscard">
+            <div class="tgl"><span>Stage 12 × 8 + shell</span><span class="sw on"><i></i></span></div>
+            <div class="tgl"><span>Tribunes · 320</span><span class="sw on"><i></i></span></div>
+            <div class="tgl"><span>Acoustics RT 1.5</span><span class="sw on"><i></i></span></div>
+            <div class="tgl" style="border:0"><span>Mobile walls</span><span class="sw"><i></i></span></div>
+          </div>
+          <div class="ioscard"><span class="uibadge uib-warn">changeover · 5 h left</span></div>
+        </div>
+      </div>
+      <div class="phone">
+        <div class="pscr">
+          <div class="iosbar"><span>9:41</span><span class="r">5G <span class="bat"></span></span></div>
+          <div class="ioshd"><p class="cap" style="margin-bottom:2px">Overview · August</p><b>Occupancy</b></div>
+          <div class="ioscard">
+            <div class="hbar" style="height:60px"><i style="--h:40%;--d:.1s"></i><i style="--h:62%;--d:.2s"></i><i style="--h:48%;--d:.3s"></i><i class="hi" style="--h:86%;--d:.4s"></i><i style="--h:70%;--d:.5s"></i></div>
+            <p style="font-size:10px;color:#71717A;margin-top:6px">weeks 29–33</p>
+          </div>
+          <div class="ioscard">
+            <p style="font-size:10px;font-weight:600;margin-bottom:6px">Revenue by format</p>
+            <span style="font-size:10px">Concerts<span style="float:right;font-weight:600">44%</span></span><div class="bar" style="height:5px;margin:3px 0 7px"><i style="width:44%"></i></div>
+            <span style="font-size:10px">Shows<span style="float:right;font-weight:600">27%</span></span><div class="bar" style="height:5px;margin:3px 0"><i style="width:27%"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="cap" style="margin-top:16px">Concept mockups: native iOS patterns: large touch targets, system typography, swipe through tasks.</p>
+  </div>
+
+  <div class="tile pad reveal" style="margin-top:36px">
+    <span class="k">UI kit · fragment</span>
     <div class="bento" style="grid-template-columns:repeat(4,1fr);margin-top:16px" id="pl-ds">
       <div>
         <p class="cap" style="margin-bottom:8px">Colour</p>
@@ -245,15 +311,14 @@
     </div>
   </div>
 
-  <div class="tile ink pad reveal" style="margin-top:36px">
-    <span class="k">Status and honesty</span>
-    <p class="big" style="font-size:clamp(19px,2.2vw,26px);margin:12px 0;line-height:1.3;max-width:840px">A concept project: no client, no metrics, no invented interviews. Instead — hypotheses and ways to validate them<span style="color:var(--copper-light)">.</span></p>
-    <p class="cap" style="opacity:.75">Production scope: 5 screens + a design-system sheet. Next step — an interactive prototype of the “schedule an event with an insufficient rigging window” scenario.</p>
+  <div class="tile pad reveal" style="margin-top:36px">
+    <span class="k">What’s next</span>
+    <p class="big" style="font-size:clamp(18px,2vw,24px);margin-top:8px;line-height:1.3;max-width:820px">Next step – an interactive prototype of the “schedule an event with an insufficient rigging window” scenario<span style="color:var(--copper)">.</span></p>
   </div>
 </div>
 
 <div class="wrap next-case">
-  <a href="case-kamerton.html"><span><span class="nx">Back to first case</span><br><span class="nm">Kamerton</span></span><span style="font-size:28px">→</span></a>
+  <a href="case-kamerton.html"><span><span class="nx">Next case</span><br><span class="nm">Kamerton</span></span><span style="font-size:28px">→</span></a>
 </div>
 </main>
 
