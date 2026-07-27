@@ -129,7 +129,7 @@
       <span class="k" style="color:#4fc396">Что отметили участники</span>
       <div style="display:flex;align-items:baseline;gap:14px">
         <div style="font-weight:800;letter-spacing:-.03em;line-height:.85;font-size:clamp(48px,8vw,78px)">4<span style="color:#4fc396;font-size:.5em">/5</span></div>
-        <p class="cap" style="opacity:.9">из 5 сказали, что решать стало проще</p>
+        <p class="cap" style="opacity:.9">сказали, что решать стало проще</p>
       </div>
       <div style="display:flex;flex-direction:column;gap:9px;margin-top:2px">
         <div style="border-left:2px solid #17a06a;padding:2px 0 2px 12px;font-size:13px;color:#dff3e8">Раскладка на факты, страхи и догадки снижает тревогу выбора</div>
@@ -139,14 +139,18 @@
   </div>
 
   <div class="bento" style="grid-template-columns:1fr 1.05fr;margin-top:36px" id="vk-tree">
-    <div class="tile beige reveal" style="display:flex;align-items:center;justify-content:center;padding:24px">
-      <div class="iph" style="width:clamp(200px,54vw,262px)"><div class="scr"><img src="assets/vk-map.jpg" alt="Ветка: карта решения с тремя ветвями крупно" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></div></div>
+    <div class="tile reveal" style="background:linear-gradient(160deg,#eef8f2,#e0f1e8);display:flex;align-items:center;justify-content:center;padding:22px">
+      <div class="mock" style="max-width:252px"><div class="scr"><img src="assets/vk-map.jpg" alt="Ветка: карта решения с тремя ветвями крупно"></div></div>
     </div>
-    <div class="tile pad reveal" style="display:flex;flex-direction:column;justify-content:center;gap:16px">
+    <div class="tile pad reveal" style="display:flex;flex-direction:column;justify-content:center;gap:15px">
       <span class="k" style="color:#0c6e48">Метафора ветки</span>
-      <div><p style="font-weight:700;font-size:15px">Ствол: как есть сейчас</p><p class="cap">Точка отсчёта, от неё считается отклонение каждого варианта.</p></div>
-      <div><p style="font-weight:700;font-size:15px">Ветви: варианты</p><p class="cap">Хватает двух, третий появляется сам. У каждой ветви: выгода, риск и уверенность.</p></div>
-      <div><p style="font-weight:700;font-size:15px">Уверенность: факты против догадок</p><p class="cap">Процент растёт, когда догадки становятся фактами, а не когда просто думаешь дольше.</p></div>
+      <div style="display:flex;gap:11px"><span style="width:9px;height:9px;border-radius:50%;background:#0c6e48;margin-top:5px;flex:none"></span><div><p style="font-weight:700;font-size:15px">Ствол: как есть сейчас</p><p class="cap">Точка отсчёта, от неё считается отклонение каждого варианта.</p></div></div>
+      <div style="display:flex;gap:11px"><span style="width:9px;height:9px;border-radius:50%;background:#17a06a;margin-top:5px;flex:none"></span><div><p style="font-weight:700;font-size:15px">Ветви: варианты</p><p class="cap">Хватает двух, третий появляется сам. У каждой ветви: выгода, риск и уверенность.</p></div></div>
+      <div style="display:flex;gap:11px"><span style="width:9px;height:9px;border-radius:50%;background:#4fc396;margin-top:5px;flex:none"></span><div><p style="font-weight:700;font-size:15px">Уверенность: факты против догадок</p><p class="cap">Процент растёт, когда догадки становятся фактами, а не когда думаешь дольше.</p></div></div>
+      <div style="border-top:1px solid var(--line);padding-top:14px;margin-top:2px">
+        <p class="cap" style="margin-bottom:9px">Как читать карту</p>
+        <div class="row"><span class="chip"><b style="color:#17a06a">●</b> факт</span><span class="chip"><b style="color:#8A8A8E">○</b> догадка</span><span class="chip"><b style="color:#b0492e">△</b> риск</span><span class="chip"><b style="color:#128a5b">+</b> выгода</span></div>
+      </div>
     </div>
   </div>
   <p class="figcap">Карта решения крупным планом: три ветви, у каждой – проценты уверенности и счётчик «факты / догадки»</p>
@@ -163,18 +167,30 @@
     <p class="cap" style="margin-top:14px">Вместо «да» или «нет» – короткий эксперимент на несколько дней. Из него возвращаешься с фактами.</p>
   </div>
 
-  <div class="bento" style="grid-template-columns:.9fr 1.1fr;margin-top:36px" id="vk-outcome">
-    <div class="tile beige reveal" style="display:flex;align-items:center;justify-content:center;padding:24px">
-      <div class="iph" style="width:clamp(200px,54vw,262px)"><div class="scr"><img src="assets/vk-observe.jpg" alt="Ветка: ежедневные записи эксперимента крупно" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></div></div>
+  <div class="bento" style="grid-template-columns:.92fr 1.08fr;margin-top:36px" id="vk-outcome">
+    <div class="tile reveal" style="background:linear-gradient(160deg,#eef8f2,#e0f1e8);display:flex;align-items:center;justify-content:center;padding:22px">
+      <div class="mock" style="max-width:252px"><div class="scr"><img src="assets/vk-observe.jpg" alt="Ветка: ежедневные записи эксперимента крупно"></div></div>
     </div>
-    <div class="tile pad reveal" style="display:flex;flex-direction:column;justify-content:center;gap:14px">
+    <div class="tile pad reveal" style="display:flex;flex-direction:column;justify-content:center;gap:15px">
       <span class="k" style="color:#0c6e48">Эксперимент и итог</span>
-      <p class="big" style="font-size:clamp(18px,2vw,24px);line-height:1.3">Каждый вечер – короткий чек-ин: энергия, интерес, тревога и заметка. За пять вечеров уверенность выросла с 27% до 44%<span style="color:#17a06a">.</span></p>
+      <p class="big" style="font-size:clamp(18px,2vw,24px);line-height:1.3">Каждый вечер – короткий чек-ин: энергия, интерес, тревога и заметка<span style="color:#17a06a">.</span></p>
+      <div>
+        <p class="cap" style="margin-bottom:7px">Пять вечеров</p>
+        <div style="display:flex;gap:8px;align-items:center">
+          <span style="width:27px;height:27px;border-radius:50%;background:#17a06a;color:#fff;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center">1</span>
+          <span style="width:27px;height:27px;border-radius:50%;background:#17a06a;color:#fff;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center">2</span>
+          <span style="width:27px;height:27px;border-radius:50%;background:#17a06a;color:#fff;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center">3</span>
+          <span style="width:27px;height:27px;border-radius:50%;border:1.5px solid #b7ddca;color:#8A8A8E;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center">4</span>
+          <span style="width:27px;height:27px;border-radius:50%;border:1.5px solid #b7ddca;color:#8A8A8E;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center">5</span>
+          <span class="cap" style="margin-left:4px">осталось два вечера</span>
+        </div>
+      </div>
+      <div class="row"><span class="chip">энергия</span><span class="chip">интерес</span><span class="chip">тревога</span><span class="chip">заметка</span></div>
       <div style="display:flex;flex-direction:column;gap:9px">
         <div><div style="display:flex;justify-content:space-between;font-size:12px"><span>было</span><b>27%</b></div><div class="bar" style="height:10px;margin-top:4px;background:#dbe4e1"><i style="width:27%;background:#9adcc2"></i></div></div>
         <div><div style="display:flex;justify-content:space-between;font-size:12px"><span>стало</span><b style="color:#0c6e48">44%</b></div><div class="bar" style="height:10px;margin-top:4px;background:#dbe4e1"><i style="width:44%;background:#17a06a"></i></div></div>
       </div>
-      <p class="cap" style="opacity:.75">Три догадки стали фактами, одна отпала. Пример из прототипа на демонстрационных данных.</p>
+      <p class="cap" style="opacity:.75">За пять вечеров уверенность выросла с 27% до 44%: три догадки стали фактами, одна отпала. Пример из прототипа на демонстрационных данных.</p>
     </div>
   </div>
 
