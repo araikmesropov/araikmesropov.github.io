@@ -235,7 +235,8 @@ figcaption,.figcap{font-size:12.5px;color:var(--muted);margin-top:10px}
 .cflow .dots{display:flex;gap:7px;justify-content:center;margin-top:6px}
 .cflow .dots b{width:7px;height:7px;border-radius:99px;background:var(--sand);cursor:pointer;transition:width .3s,background .3s}
 .cflow .dots b.on{background:var(--copper);width:20px}
-@media(max-width:600px){.cflow .arw{display:none}.iph{width:142px}}
+#vkCar .iph{width:210px}
+@media(max-width:600px){.cflow .arw{display:none}.iph{width:142px}#vkCar .iph{width:172px}}
 
 .next-case{padding-top:56px;padding-bottom:64px}
 .next-case a{display:flex;justify-content:space-between;align-items:center;background:var(--ink);color:#fff;border-radius:var(--r);padding:32px 36px;transition:background .25s}
