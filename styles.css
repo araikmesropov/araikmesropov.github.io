@@ -214,11 +214,14 @@ figcaption,.figcap{font-size:12.5px;color:var(--muted);margin-top:10px}
 @keyframes gbleaf{0%,14%{opacity:0;transform:scale(0)}32%{opacity:1;transform:scale(1)}88%{opacity:1;transform:scale(1)}97%,100%{opacity:0;transform:scale(.3)}}
 @media(prefers-reduced-motion:reduce){.gbranch .ln{animation:none;stroke-dashoffset:0}.gbranch .lf{animation:none;opacity:1;transform:none}}
 
-/* iPhone 17 Pro Max mockup for enlarged real screenshots */
-.mock{width:100%;max-width:266px;aspect-ratio:9/19.5;background:#0b0b0d;border:1px solid #313137;border-radius:14%/6.5%;padding:3%;position:relative;box-shadow:0 24px 54px rgba(20,18,16,.3),0 3px 10px rgba(20,18,16,.2);flex:none;margin:0 auto}
-.mock .scr{position:relative;width:100%;height:100%;border-radius:11.5%/5.5%;overflow:hidden;background:#000}
+/* iPhone Pro mockup - thin titanium frame */
+.mock{width:100%;max-width:262px;aspect-ratio:9/19.5;position:relative;background:#08080a;padding:3px;border-radius:13.5%/6.3%;flex:none;margin:0 auto;
+  box-shadow:0 0 0 1px #54545b, 0 0 0 3px #ccccd2, 0 0 0 3.6px #7f7f87, 0 22px 46px rgba(20,18,16,.24), 0 3px 10px rgba(20,18,16,.16)}
+.mock .scr{position:relative;width:100%;height:100%;border-radius:11.4%/5.4%;overflow:hidden;background:#000}
 .mock .scr img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
-[data-theme="dark"] .mock{box-shadow:0 24px 54px rgba(0,0,0,.5)}
+.mock::before{content:"";position:absolute;left:-3.4px;top:23%;width:3px;height:15%;border-radius:2px 0 0 2px;background:linear-gradient(#c4c4ca,#8a8a91)}
+.mock::after{content:"";position:absolute;right:-3.4px;top:30%;width:3px;height:10%;border-radius:0 2px 2px 0;background:linear-gradient(#c4c4ca,#8a8a91)}
+[data-theme="dark"] .mock{box-shadow:0 0 0 1px #54545b, 0 0 0 3px #b6b6bc, 0 0 0 3.6px #6b6b72, 0 22px 46px rgba(0,0,0,.5)}
 
 /* ===== coverflow carousel ===== */
 .cflow{position:relative;overflow-x:clip;overflow-y:visible}
