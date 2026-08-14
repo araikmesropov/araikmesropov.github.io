@@ -472,3 +472,28 @@ html.scrolled .totop{opacity:1;visibility:visible;transform:none}
 @media(max-width:400px){
   .wrap{padding-left:20px;padding-right:20px}
 }
+
+/* Код лошади – блок афиши на главной */
+.hc{padding:0}
+.hc-top{display:grid;grid-template-columns:.82fr 1.18fr;align-items:stretch}
+.hc-poster{background:#F8F2E7;display:flex;align-items:center;justify-content:center;padding:34px}
+.hc-poster img{width:100%;max-width:300px;height:auto;display:block;box-shadow:0 20px 46px rgba(20,18,16,.24)}
+.hc-intro{padding:32px 34px;display:flex;flex-direction:column;justify-content:center;gap:13px}
+.hc-intro h3{font-size:30px;font-weight:700;letter-spacing:-.02em}
+.hc-intro>p{font-size:14px;color:var(--muted);max-width:600px}
+.hc-spec{display:flex;flex-wrap:wrap;gap:8px;margin-top:2px}
+.hc-spec span{font-family:var(--mono);font-size:11px;color:var(--muted);border:1px solid var(--line);border-radius:7px;padding:5px 10px;background:var(--white)}
+.hc-spec b{color:var(--txt);font-weight:600}
+.hc-note{font-size:13px;color:var(--muted);border-left:2px solid var(--copper);padding-left:12px}
+.hc-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border-top:1px solid var(--line)}
+.hc-step{margin:0;background:rgba(255,255,255,.5);padding:16px 18px 18px;display:flex;flex-direction:column;gap:11px}
+.hc-step .th{border-radius:10px;overflow:hidden;background:#F8F2E7;aspect-ratio:4/3}
+.hc-step .th img{width:100%;height:100%;object-fit:cover;display:block}
+.hc-step figcaption{display:flex;flex-direction:column;gap:5px}
+.hc-step .num{font-family:var(--mono);font-size:10px;letter-spacing:.09em;color:var(--copper-dark)}
+.hc-step b{font-size:13.5px;font-weight:600;letter-spacing:-.01em;line-height:1.25}
+.hc-step p{font-size:12.5px;color:var(--muted);line-height:1.45}
+[data-theme="dark"] .hc-step{background:rgba(24,28,40,.5)}
+[data-theme="dark"] .hc-spec span{background:rgba(255,255,255,.04)}
+@media(max-width:980px){.hc-top{grid-template-columns:1fr}.hc-poster{padding:28px}.hc-intro{padding:26px 24px}.hc-steps{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.hc-steps{grid-template-columns:1fr}.hc-intro h3{font-size:26px}}
