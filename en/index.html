@@ -89,28 +89,33 @@
         <div class="hc-intro">
           <div class="row"><span class="k">Poster · print</span><span class="badge live">Novy Manege</span></div>
           <h3>Horse Code</h3>
-          <p>Poster and invitation for an exhibition at Novy Manege, Moscow, 11 September – 11 October 2026. Artwork – Latif Kazbekov; the layout is mine, and the final version was agreed with the artist. The poster now runs on ticket aggregators – Yandex, Mosbilet and the Novy Manege site.</p>
+          <p>A poster for the Horse Code exhibition at Novy Manege, Moscow.</p>
+          <p>The brief was to build a visual image for the show that holds contemporary art, the horse and the technological feel of the project in one frame. At the centre of the composition is Latif Kazbekov's own drawing, set into a strict typographic system.</p>
           <div class="hc-spec"><span><b>JetBrains Mono</b> 260 · 8% tracking</span><span><b>Inter</b> Semi Bold 14 · 13% tracking</span><span><b>#F8F2E7</b></span><span><b>A4</b> · 1374×1944</span></div>
-          <p class="hc-note">The headline is set in a monospace – the kind you write code in. Both for the letterforms and for the rhyme with the title.</p>
+          <button class="hc-toggle" type="button" aria-expanded="false" aria-controls="hc-path-en" onclick="hcPath(this)"><span>How it was made</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
         </div>
       </div>
-      <div class="hc-steps">
-        <figure class="hc-step">
-          <div class="th"><img src="../assets/hc-vars.jpg" alt="Three variants shown to Novy Manege"></div>
-          <figcaption><span class="num">01</span><b>Three routes</b><p>One artwork – three approaches: a heavy headline above the reproduction, a light one below it, and a crop. Manege chose the crop.</p></figcaption>
-        </figure>
-        <figure class="hc-step">
-          <div class="th"><img src="../assets/hc-crop.jpg" alt="The horse’s head lifted out of the artwork, tilted 7 degrees"></div>
-          <figcaption><span class="num">02</span><b>A crop, not a reproduction</b><p>The head is lifted out of the work, background removed, tilted 7°. It runs off the edge of the sheet: you see a sign, not the whole figure.</p></figcaption>
-        </figure>
-        <figure class="hc-step">
-          <div class="th"><img src="../assets/hc-type.jpg" alt="The Horse Code headline set in JetBrains Mono"></div>
-          <figcaption><span class="num">03</span><b>Typography</b><p>JetBrains Mono at 8% tracking: letters stand like characters in a line. Supporting text is smaller and looser so it never fights the drawing.</p></figcaption>
-        </figure>
-        <figure class="hc-step">
-          <div class="th"><img src="../assets/hc-invite.jpg" alt="Invitation to the exhibition opening"></div>
-          <figcaption><span class="num">04</span><b>Invitation</b><p>Same type pair, same ground, a different medium – a tall card for the opening. Here Kazbekov’s work is shown in full.</p></figcaption>
-        </figure>
+      <div class="hc-steps-wrap" id="hc-path-en">
+        <div>
+          <div class="hc-steps">
+          <figure class="hc-step">
+            <div class="th"><img src="../assets/hc-vars.jpg" alt="Three variants shown to Novy Manege"></div>
+            <figcaption><div class="hh"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 4.5h4.2v15H3.5zM9.9 4.5h4.2v15H9.9zM16.3 4.5h4.2v15h-4.2z"/></svg></span><b>Three routes</b></div><p>One artwork – three approaches: a heavy headline above the reproduction, a light one below it, and a crop. Manege chose the crop.</p></figcaption>
+          </figure>
+          <figure class="hc-step">
+            <div class="th"><img src="../assets/hc-crop.jpg" alt="The horse head lifted out of the artwork, tilted 7 degrees"></div>
+            <figcaption><div class="hh"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.5 2v15.5H22M2 6.5h15.5V22"/></svg></span><b>A crop, not a reproduction</b></div><p>The head is lifted out of the work, background removed, tilted 7°. It runs off the edge of the sheet: you see a sign, not the whole figure.</p></figcaption>
+          </figure>
+          <figure class="hc-step">
+            <div class="th"><img src="../assets/hc-type.jpg" alt="The Horse Code headline set in JetBrains Mono"></div>
+            <figcaption><div class="hh"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M12 6v13M9 19h6"/></svg></span><b>Typography</b></div><p>JetBrains Mono at 8% tracking: letters stand like characters in a line. Supporting text is smaller and looser so it never fights the drawing.</p></figcaption>
+          </figure>
+          <figure class="hc-step">
+            <div class="th"><img src="../assets/hc-invite.jpg" alt="Invitation to the exhibition opening"></div>
+            <figcaption><div class="hh"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 5h18v14H3zM3 9.5h18"/></svg></span><b>Invitation</b></div><p>Same type pair, same ground, a different medium – a tall card for the opening. Here Kazbekov's work is shown in full.</p></figcaption>
+          </figure>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -242,6 +247,7 @@
 </footer>
 
 <script>
+function hcPath(b){const c=b.closest('.hc'),o=!c.classList.contains('open');c.classList.toggle('open',o);b.setAttribute('aria-expanded',o);b.querySelector('span').textContent=o?'Collapse':'How it was made'}
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.1});
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 const rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
