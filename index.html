@@ -37,9 +37,11 @@
     <a class="btn solid" href="#work">Смотреть проекты</a>
     <a class="btn line" href="#contact">Связаться</a>
   </div>
-  <div class="statband" style="margin-top:56px;max-width:900px">
-    <div class="tile pad stat reveal"><div class="n">4+1</div><div class="l">проекта + концепт в производстве</div></div>
-    <div class="tile pad stat reveal"><div class="n">4</div><div class="l">дисциплины дизайна</div></div>
+  <div class="hlband">
+    <div class="hl reveal"><div class="in"><div class="n">3+</div><div class="l">года в дизайне</div><div class="sub">self-employed</div></div></div>
+    <div class="hl reveal"><div class="in"><div class="n">6</div><div class="l">направлений</div><div class="sub">сайты · UX/UI · брендинг</div></div></div>
+    <div class="hl reveal"><div class="in"><div class="n">6</div><div class="l">программ</div><div class="sub">Figma · Framer · Photoshop</div></div></div>
+    <div class="hl reveal"><div class="in"><div class="n">ИИ</div><div class="l">в рабочем процессе</div><div class="sub">каждый день</div></div></div>
   </div>
 </section>
 
@@ -252,7 +254,7 @@ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.targ
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 const rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
 if(!rm){const io2=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;io2.unobserve(e.target);const n=e.target,t=parseInt(n.dataset.cnt),s=performance.now(),d=750;const step=x=>{const p=Math.min(1,(x-s)/d);n.textContent=Math.round(t*(.15+.85*p*(2-p)));if(p<1)requestAnimationFrame(step)};requestAnimationFrame(step)}),{threshold:.6});
-document.querySelectorAll('.stat .n').forEach(n=>{const v=n.textContent.trim();if(/^\d+$/.test(v)&&+v>1){n.dataset.cnt=v;io2.observe(n)}})}
+document.querySelectorAll('.stat .n,.hl .n').forEach(n=>{const v=n.textContent.trim();if(/^\d+$/.test(v)&&+v>1){n.dataset.cnt=v;io2.observe(n)}})}
 document.getElementById('contact-form').addEventListener('submit',function(ev){
   ev.preventDefault();
   const msg=(new FormData(this).get('message')||'').toString();
