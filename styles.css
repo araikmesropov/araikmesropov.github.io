@@ -99,7 +99,8 @@ h2.s{font-weight:700;letter-spacing:-.03em;font-size:clamp(26px,3.6vw,40px)}
 .prog{display:inline-flex;align-items:center;gap:7px;font-size:12px;font-weight:600;border-radius:99px;padding:5px 13px 5px 11px;border:1px solid color-mix(in srgb,var(--bc,#888) 34%,transparent);background:color-mix(in srgb,var(--bc,#888) 12%,transparent);color:color-mix(in srgb,var(--bc,#888) 70%,#111);animation:progGlow 3.4s ease-in-out infinite}
 .prog::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--bc,#888);flex:none}
 .prog.figma::before{background:conic-gradient(from 200deg,#0ACF83,#1ABCFE,#A259FF,#F24E1E,#FF7262,#0ACF83)}
-.prog:nth-child(2){animation-delay:.5s}.prog:nth-child(3){animation-delay:1s}.prog:nth-child(4){animation-delay:1.5s}.prog:nth-child(5){animation-delay:2s}.prog:nth-child(6){animation-delay:2.5s}
+.prog:nth-child(2){animation-delay:.5s}.prog:nth-child(3){animation-delay:1s}.prog:nth-child(4){animation-delay:1.5s}.prog:nth-child(5){animation-delay:2s}.prog:nth-child(6){animation-delay:2.5s}.prog:nth-child(7){animation-delay:3s}.prog:nth-child(8){animation-delay:.25s}.prog:nth-child(9){animation-delay:.75s}
+.prog.ai::before{background:conic-gradient(from 120deg,#FF6AD5,#7C6CF2,#4F7CFF,#00D4C8,#FF6AD5)}
 @keyframes progGlow{0%,100%{box-shadow:0 0 4px color-mix(in srgb,var(--bc,#888) 14%,transparent)}50%{box-shadow:0 0 14px color-mix(in srgb,var(--bc,#888) 42%,transparent),0 0 4px color-mix(in srgb,var(--bc,#888) 30%,transparent)}}
 [data-theme="dark"] .prog{border-color:color-mix(in srgb,var(--bc,#888) 46%,transparent);background:color-mix(in srgb,var(--bc,#888) 22%,transparent);color:color-mix(in srgb,var(--bc,#888) 60%,#fff)}
 [data-theme="dark"] .prog{animation-name:progGlowDark}
